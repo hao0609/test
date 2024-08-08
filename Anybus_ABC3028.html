@@ -10,7 +10,7 @@
   <meta name="description" content="BHP Industry Solution-司騰達股份有限公司">
   
   
-  <title>Anybus</title>
+  <title>Anybus ABC3090-MB / ABC3028 串列通訊 - Modbus TCP</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+
   <style type="text/css">
   @import url("css/mycss.css");
 
@@ -32,53 +34,34 @@
 }
   #back{ border:1px #DCCECE solid;}
   #back:hover{background-color:#005578;}
-#button-back:hover{background-color:#003388}
-  #button-back{background-color:#003344}    
-  #button-back_1{background-color:#003344} 
-  #button-back:hover{background-color:#003388}   
-  #mapback:hover{ text-decoration:underline;}
+  #button-back:hover{background-color:#003388}
+  #button-back{background-color:#003344}
+  .btn{display: flex;}
   #btn1{ background-color:#0B0B0B}
   #btn1:hover{background-color:#3D59DB}
   .newstext{ font-weight:bold; font-family:微軟正黑體; font-size:20px}
   .newstext>span{ font-weight:bold; font-family:Valken;color:#ba1a34;}
   .newstext.red{ color:#ba1a34;}
-  .videobox {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-}
-
-.videobox iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.dropdown-menu .dropdown-submenu {padding-top: 0px !important; padding-bottom: 0px !important;}
+  #btn{ background-color:#0B0B0B}
+  #btn:hover{background-color:#3D59DB}
+  .dropdown-menu .dropdown-submenu {padding-top: 0px !important; padding-bottom: 0px !important;}
 #em_Catalog {top: -40px !important} 
 #lng_box {left:-250px !important}
 @media screen and (max-width: 1456.5px){ #lng_box {left: 0px !important;} }
   @media screen and (max-width: 900px){
-
-        #img{position: relative;right: 0px !important;} 
-        #img2{position: relative;right: 0px !important;}
-        #img3{position: relative;right: 0px !important;}
-
-        #btn{position: relative;left: 10% !important;}
-        #step{padding-top: 20px !important;}
-        #step_2{padding-left: 0px !important;}
-        #button-back{margin-left: 70px !important}
-        #btn1{position: relative; right:0px !important;bottom:50px !important} 
-        #a1{text-align: center !important;text-indent: 0px !important}
-        #button_1{text-align: center !important;}
-        #advantage{margin-left: 35px !important; margin-right: 35px !important;}
-        #img_100{width: 100% !important;}
-        #br::after{content:' \A '; white-space: pre-line;}
-        #title{font-size: 30px !important;}
-        #em_Catalog {top: 0px !important} 
-        .dropdown .text-black.dropdown-item.dropdown-toggle.display-4 .left-1 {text-indent: 0px !important;}
+    #img_Anybus{margin-top: 0px !important;}
+    #img{ position: relative; right: 0px !important;}
+    #btn{position: relative; right:0px !important;bottom:50px !important} 
+    #btn1{position: relative; right:0px !important;bottom:50px !important} 
+    #button-back{margin-left: 0px !important ;position: relative;left: 0px !important;}
+    #prod{display: flex;justify-content: space-evenly;}
+    .carousel-control-prev-icon {margin-right:35px  !important;}
+    #a1{text-align: center !important;text-indent: 0px !important}
+    #br::after{content:' \A '; white-space: pre-line;}
+    #title{font-size: 20px !important;}
+    #titletext{padding-left: 40px !important;padding-right: 40px !important;}
+    #em_Catalog {top: 0px !important} 
+    .dropdown .text-black.dropdown-item.dropdown-toggle.display-4 .left-1 {text-indent: 0px !important;}
         .dropdown-menu.dropdown-submenu .text-black.dropdown-item.display-4 .left-2{text-indent: 0px !important;}
         .dropdown-menu.dropdown-submenu .text-black.dropdown-item.display-4 .left-3 {text-indent: 0px !important;}
         .dropdown-menu.dropdown-submenu .text-black.dropdown-item.display-4 .left-73 {text-indent: 0px !important;}
@@ -91,8 +74,8 @@
         .dropdown-menu .text-black.dropdown-item.display-4 .left-11 {text-indent: 0px !important;}
         .dropdown-menu .text-black.dropdown-item.display-4 .left-12 {text-indent: 0px !important;}
         .text-black.dropdown-item.display-4 .left-13 .texts {text-indent: 0px !important;}
-        .dropdown-menu .text-black.dropdown-item.display-4 #COSYPLUS {text-indent: 0px !important;}
         .dropdown-menu .text-black.dropdown-item.display-4 .left-14{text-indent: 0px !important;}
+        .dropdown-menu .text-black.dropdown-item.display-4 #COSYPLUS {text-indent: 0px !important;}
         .dropdown .text-black.dropdown-item.dropdown-toggle.display-4 .left-15 {text-indent: 0px !important;}
         .navbar-nav.nav-dropdown.nav-right .nav-item.dropdown .left-16{text-indent: 0px !important;}
         .text-black.dropdown-item.display-4 .left-17 .texts {text-indent: 0px !important;}
@@ -491,7 +474,7 @@
                     </div>
                 </li>
                 
-                 <!--
+                <!--
                 <li class="nav-item dropdown open">
                 	<a class="nav-link link text-black dropdown-toggle display-4" href="index.html" aria-expanded="true" data-toggle="dropdown-submenu">
                     	<div class="texts">語系</div>
@@ -519,7 +502,6 @@
                     
                 </li>
          
-         
             </ul>
         </div>
     </nav>
@@ -528,366 +510,140 @@
 
 <section class="step3 cid-rVK0Q2WBxw" id="step3-49">
 
- 
-    <img src="img/anybus_5.jpg" class="img-fluid" alt="...">
+    
 
     
-    <div class="container">
-        <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2">
-            <span class="texts" id="title">工業通訊協議轉換解決方案</span>
-        </h2>
+    
+    <div class="container" id="titletext">
+        <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"><span class="texts" style="text-transform:capitalize">Anybus通訊轉換模組-串列通訊系列</span></h2>
         <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style align-center display-5">
-            <span class="texts">現成的解決方案-連接-配置-完成! 解決工廠設備之間M2M網路連接問題 !</span>
+            <span class="texts" style="text-transform:capitalize">Anybus 通訊協議轉換模組解決方案</span>
         </h3>
-    
-
-        <div class="videobox">
-            <iframe width="400" height="300" src="https://www.youtube.com/embed/DIesjTsc6fQ?&playlist=DIesjTsc6fQ&autoplay=1&loop=1&mute=1&rel=0" frameborder="0" allowfullscreen>
-            </iframe>
-            </div>
-
-
-
-        <div class="media-container-row">
-            <div class="media-block" style="width: 50%;">
-                <div class="mbr-figure">
-                    <div class="bottom_1">
-                        <img src="img/anybus-logo.jpg" id="img"> 
-                    </div>
- 
-                </div>
-                        
-            </div>
-            <div class="step-container">
-                <div class="card">
-                    <div class="step-element d-flex">
-           
-                        <div class="step-text-content" style="padding-top: 80px;" >
-                        
-                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">工廠自動化和離散製造通訊轉換模組</span>
-                            </h4>
-                            <p class="mbr-step-text mbr-fonts-style display-7">
-                                <span class="texts">Anybus®網關通作為通過工業網路，PLC或機器和設備之間的通訊協議轉換器，提供了快速，輕鬆的網絡集成。</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-    
-                
-                <div class="card">
-                    <div class="step-element d-flex">
-                        
-                        
-                        
-                        
-                                 
-                        <div class="step-text-content">
-                            
-                            <p class="mbr-step-text mbr-fonts-style display-7">
-                                <span class="texts">可支持開放式標準通訊總線CC-Link ,Device。</span>
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-
-                
-                <div class="card">
-                    <div class="step-element d-flex">
-      
-                                 
-                        <div class="step-text-content">
-                            
-                            <p class="mbr-step-text mbr-fonts-style display-7">
-                                <span class="texts">Net ,PROFIBUS ,CANopen, EtherCAT, EtherNet/IP, PROFINET , CC-Link IE Field ,Modbus TCP協議,滿足市場上各大PLC與設備之間高速即時通訊轉換與資料交換。</span>
-                                
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
     </div>
-        <a style="position:relative;left:15%;top:30px" href="download/司騰達 HMS anybus_CN_web_2020.pdf" target="_blank">
-        <button id="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px">
-            <div class="texts" style="position:relative;left:2px;color:#FFFFFF">型錄下載</div>
-        </button>
-        </a> 
-	
-	 
+
 </section>
 
-
-  <br/><br/>
-
-<img src="img/anybus_6.jpg" class="img-fluid" alt="...">
-
-
-<section class="step3 cid-rVK0Q6Gw44" id="step3-4c">
-
+<section class="step3 cid-rVK0Q2WBxw" id="step3-49" style="background-color:#E1EEF6 ;padding-top: 30px;">
     
-
+        <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"><span class="texts" style="font-size: 30px;text-transform:capitalize ;padding-left: 10px; padding-right: 10px;"id="title"><span id="br">Anybus ABC3090-MB / ABC3028</span> 串列通訊 - Modbus TCP 通訊轉換模組</span></h2>
     
-    
-    <div class="container">
-        
-        
-        <div class="media-container-row">
-            <div class="media-block" style="width: 49%;">
-                <div class="mbr-figure">
-                    <img src="img/anybus_comm2.jpg" id="img2">
-                </div>
-            </div>
-            <div class="step-container">
-                <div class="card">
-                    <div class="step-element d-flex">
-                    <br/>
-                    <br/>
-                            
-                        <div class="step-text-content">
-                           
-                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><div class="texts">Anybus Gateway 2.0系列</div>
-                          </h4>
-                            <p class="mbr-step-text mbr-fonts-style display-7">
-                                <span class="texts">
-                                    全新且更人性化的WEB設定介面，無須安裝任何軟體，快速配置輕鬆上手。
-                                    通過串列通訊RS232 / 485對所有主要的現場裝置連接,
-                                    並轉換為工業實時乙太網絡 EtherNet/IP, PROFINET ,Modbus TCP進行工業設備的改造。
-
-            
-                                <br/>
-                                <br/>
-                                新一代 Anybus Gateway 通訊協議轉換模組，提供更快、更有效率的工業網路資料傳輸。高效能將設備或網路連接到 EtherCAT、EtherNet/IP、Modbus TCP、PROFIBUS 和 PROFINET 控制系統，由屢獲殊榮的 Anybus NP40 工業網路處理器提供支援，可滿足效能、可靠性和安全性的嚴格要求。
-                                憑藉新的硬體和軟體，可實現即時資料傳輸，速度比前代產品快 10 倍。
-                                <br/>
-                              
-
-                        </div>
-                    </div>
-                </div>
-
-                
-
-                
-            </div>
-        </div>
-    </div>
 </section>
-<section class="step3 cid-rVK0Q6Gw44" id="step3-4c">
-
-    
-
-    
-    
+<section class="step3 cid-rVK0Q2WBxw" id="step3-49" style="padding-top: 30px;">
     <div class="container">
-        
-        
-        <div class="media-container-row">
+        <div class="media-container-row" >
             <div class="media-block" style="width: 49%;">
-                <div class="mbr-figure">
-                    <img src="img/anybus_comm_1.jpg" id="img2">
-                </div>
+                                  
+                <img src="img/ABC3028.png" class="card-img-top" style="width: 100%; margin-top: 80px;" id="img_Anybus">
+
+                    
+                
             </div>
             <div class="step-container">
                 <div class="card">
-                    <div class="step-element d-flex">
-                    <br/>
-                    <br/>
-                              
+                    <div class="step-element d-flex">         
                         <div class="step-text-content">
-                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><div class="texts">ABC3000系列</div>
+						<br>
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts" style="font-size: 23px;text-transform:capitalize;line-height: 30px;">Anybus 通訊協議轉換模組 <br>串列通訊 - Modbus TCP</span>
                             </h4>
-                            
-                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><div class="texts">串列通訊/CAN設備到控制系統（PLC）</div>
-                          </h4>
-                            <p class="mbr-step-text mbr-fonts-style display-7" >
-                                <span class="texts">
-                                    將基於RS-485/422/232或CAN的設備和機器連接到控制系統，以允許數據透明的流動。只需連接、配置，即可完成。<br><br>
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts" style="font-size: 23px;">型號: ABC3090-MB / ABC3028</span>
+                            </h4>
+                            <p class="mbr-step-text mbr-fonts-style display-7">
+								<div class="texts" ;>
+                                    將基於串列通訊 RS-232/485 的工業設備整合到 Modbus TCP 通訊協議的控制系統，無需對設備進行任何更改。只需連接、配置即可完成。<br><br>
 
-                                    模組執行智能協議轉換，允許設備和控制系統無縫通信。<br><br>
+                                    Anybus 通訊協議轉換模組 可以傳輸大量數據，從Web介面透過拖拉方式可以快速配置，並且建立在值得信賴的Anybus技術之上。<br><br>
+
+                                    轉換幾乎任何類型的串列通訊協定<br>
+                                    Anybus 通訊協議轉換模組可以轉換標準串列通訊協定（如Modbus RTU）和專有串列通訊請求/回應或基於生成/消費的協定。<br><br>
+
+                                    典型串列通訊應用<br>
+                                    典型的串列通訊應用包括變頻驅動器、感測器、執行器、人機介面、條碼閱讀器、RFID 讀取器和工業秤等
+                                    <br><br>
                                     
-                                    為您的工廠車間找到合適的設備，無需擔心是否符合現有控制系統，或者無需更改硬體和軟體即可將機器的覆蓋範圍擴展到新的市場和應用。
-                                <br/>
-                                </span>
-                                <div id="button_1">
-                                <a style="position:relative;top:10px" href="Anybus_ABC3000Series.html" target="_blank">
-                                    <button id="button-back_1" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;text-align: center;">
-                                        <div class="texts" style="color:#FFFFFF">更多資訊</div>
-                                    </button>
-                                </a> 
-                                <a style="position:relative;top:10px" href="download/司騰達_ABC3000系列_Communicator_datasheet_Serial_to_PLC.pdf" target="_blank">
-                                    <button id="button-back_1" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;text-align: center; margin-left: 2%;">
-                                        <div class="texts" style="position:relative;left:2px;color:#FFFFFF">型錄下載</div>
-                                    </button>
-                                </a> 
-                                </div>
+                                    資料交換量：<br>
+
+                                    Modbus RTU Master 輸入/輸出：最大各 1500 Bytes<br>
+                                    Modbus TCP Server 輸入/輸出：最大各 1500 Bytes<br>
+								</div>
+								
                             </p>
                         </div>
                     </div>
-                </div>
-
+                </div>    
+			</div>
+        </div>
+       
+   
+            <diV  style="padding-bottom: 30px;" id="prod" >
                 
-
-                
-            </div>
-        </div>
-    </div>
-</section>
-<section class="step3 cid-rVK0Q6Gw44" id="step3-4c">
-
-    
-
-    
-    
-    <div class="container">
-        
-        
-        <div class="media-container-row">
-            <div class="media-block" style="width: 49%;">
-                <div class="mbr-figure">
-                    <img src="img/anybus_comm_2.jpg" id="img2">
-                </div>
-            </div>
-            <div class="step-container">
-                <div class="card">
-                    <div class="step-element d-flex">
-                    <br/>
-                    <br/>
-                              
-                        <div class="step-text-content">
-                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><div class="texts">ABC4000系列</div>
-                            </h4>
-                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><div class="texts">控制系統（PLC）到控制系統（PLC）</div>
-                          </h4>
-                            <p class="mbr-step-text mbr-fonts-style display-7" >
-                                <span class="texts">
-                                    將PLC控制系統與Anybus通訊協議轉換模組橋接，允許數據在控制器之間無縫流動。<br><br>
-                                    只需連接、配置即可完成。 <br><br>
-                                    Anybus通訊協議轉換模組可實現控制系統之間的透明數據交換，使您可以將傳統設備橋接並集成到現代高性能網絡中。<br><br>
-                               
-                                </span>
-                                <div id="button_1">
-                                <a style="position:relative;top:10px" href="Anybus_ABC4000Series.html" target="_blank">
-                                    <button id="button-back_1" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;text-align: center;">
-                                        <div class="texts" style="color:#FFFFFF">更多資訊</div>
-                                    </button>
-                                </a> 
-
-                                <a style="position:relative;top:10px" href="download/司騰達_ABC4000系列_Communicator_datasheet_PLC_to_PLC.pdf" target="_blank">
-                                     <button id="button-back_1" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;text-align: center; margin-left: 2%;">
-                                        <div class="texts" style="position:relative;left:2px;color:#FFFFFF">型錄下載</div>
-                                    </button>
-                                </a> 
-                                </div>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="step3 cid-rVK0Q6Gw44" id="step3-4c">    
-    <div class="texts display-5" style="background-color: #f1f1f5;padding-top: 1.5rem;padding-bottom: 1.5rem;text-align: center;">
-        <span id="br">Anybus Gateway通訊協議轉換模組</span>線上程式編輯模擬器
-    </div>
-    <div class="container" style="text-align: center;">
-        
-        <div class="texts " style="margin-top: 15px;margin-bottom: 30px;">
-        <P>Anybus Gateway通訊協議轉換模組線上程式編輯模擬器可讓您先行體驗Web用戶界面。</P>
-
-        <P>您只需選擇需要的產品型號，即可瀏覽該模組的Web用戶界面</P>
-            <P> 可在此Web介面創建、導入、導出配置參數文件等。</P>
-        </div>
-        <img src="img/anybus_online_simulator.jpg" style="width: 80%;border: #818080; border-style: solid;border-width: 1px" id="img_100">
-        <div class="texts " style="margin-top: 30px;margin-bottom: 30px;">
-        <P>適用產品系列: ABC3000系列、ABC4000系列</P>
-        <P>不適用產用型號: ABC3090、ABC3190、ABC4090、ABC4091與 CAN 通訊模組系列</P>
-        </div>
-        <img src="images/unnamed.png" style="width: 80%;border: #818080; border-style: solid;border-width: 1px" id="img_100">
-        <div class="texts " style="margin-top: 30px;margin-bottom: 30px;margin-left: 110px;margin-right: 110px;text-align:left" id="advantage">
-            <P>優勢:</P>
-            <P>● 讓您在購買前先體驗產品，做出理想選擇</P>
-            <P>● 允許用戶在沒有Anybus模組的情況下創建／修改配置文件</P>
-            <P>● 配置界面全貌展現，真實操作體驗</P>
-        </div>
-
-
-        <div id="button_1">
-            <a style="position:relative;top:5px" href="https://emulator.online-config.anybus.com/?msdynttrid=O2ae9ZY0dQaJRuclPzQ2ZJIn2hUzFBQVwZsG1P_DcI4" target="_blank">
-                <button id="button-back_1" style="letter-spacing:3px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;text-align: center;">
-                    <div class="texts" style="color:#FFFFFF">立即線上體驗</div>
+                <button id="button-back" style="letter-spacing:7px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px; ">
+                    <a  href="https://www.hms-networks.com/p/abc3028-a-anybus-communicator-serial-master-to-modbus-tcp-slave?tab=tab-specification" target="_blank" style="text-decoration:none;"><div class="texts" style="position:relative;left:3px;color:#FFFFFF">詳細資訊</div> </a> 
                 </button>
-                </a> 
+                <button id="button-back" style="letter-spacing:7px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px ;position: relative; left: 2rem;">
+                    <a  href="https://www.hms-networks.com/p/abc3028-a-anybus-communicator-serial-master-to-modbus-tcp-slave?tab=tab-support#related_documents" target="_blank" style="text-decoration:none;"><div class="texts" style="position:relative;left:3px;color:#FFFFFF">技術資料</div> </a> 
+                </button>
+                <button id="button-back" style="letter-spacing:7px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px ;position: relative; left: 4rem;">
+                    <a  href="download/司騰達_ABC3000系列_Communicator_datasheet_Serial_to_PLC.pdf" target="_blank" style="text-decoration:none;"><div class="texts" style="position:relative;left:2px;color:#FFFFFF">型錄下載</div> </a> 
+                </button>
+           
             </div>
-
+        
     </div>
 </section>
-<section>
-    <div class="container">
+<section class="step3 cid-rVK0Q2WBxw" id="step3-49" style="background-color:#E1EEF6 ;padding-top: 30px;">    
+       
+    <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"><span class="texts" style="font-size: 30px; ">特色與優勢</span></h2>
+</section>
+<section class="step3 cid-rVK0Q2WBxw" id="step3-49" style="padding-top: 30px;padding-bottom: 60px;">
+    <div class="container" >
+        <div class="texts" style="font-size: 20px;">
+       <ul>
+        <li>基於Web的拖放設定介面</li>
+        <li>雙向傳輸最多 1500 位元組的資料（需要large forward open）</li>
+        <li>轉換標準和專有RS-232/485協議</li>
+        <li>-25 至+70 °C 工業溫度範圍</li>
+        <li>由屢獲殊榮的 NP40 網路處理器提供支持</li>
+             
+       </ul>
         
+       拖放式web介面<br>
+       為了確保您花盡可能少的時間配置通訊協議轉換模組，我們建立了一個基於 Web 的圖形響應式使用者介面。無需安裝任何軟體，只需打開您最喜歡的網頁瀏覽器即可開始。<br><br>
+
+       傳輸多達 1,500 位元組的資料<br>
+       對更多資料的需求不斷增長，而通訊協議轉換模組已具備應對這項挑戰的能力。它可以從 PLC 到 Gateway 傳輸 1500 字節，從 Gateway 到 PLC 傳輸 1500 字節，總共 3000 位元組（需要large forward open）。支援多達 150 個 Modbus 命令，這意味著即使是具有多個節點的複雜配置也可以輕鬆處理。<br><br>
+              
+       工業級溫度範圍<br>
+       -25 至 +70 °C 的工業工作溫度範圍確保通訊器在惡劣條件下也能表現優異。<br><br>
+       
+       由經過驗證的 NP40 技術提供支援<br>
+       通訊協議轉換模組 基於屢獲殊榮且經過驗證的 Anybus NP40 網路處理器建構。全球有數十萬個 NP40: 用於嵌入式應用，它是可靠工業通訊的行業基準。<br><br>
+       
+       安全開關<br>
+       即使採取了複雜的安全措施，人為錯誤仍然是安全漏洞的主要原因。為了簡化安全性，我們在通訊協議轉換模組 上加入了實體安全開關。它會鎖定您的配置並阻止對基於 Web 的配置介面的任何存取。配置完成後，只需翻轉它即可看到產品上的掛鎖 LED 亮起。 <br><br>
+       
+       安全晶片和安全啟動<br>
+       為了應對當前和未來的安全挑戰，通訊協議轉換模組 配備了最新的 Anybus 安全晶片。安全啟動可確保韌體不會被竄改。<br><br>
+
+       乙太網路連接埠配置<br>
+       使用專用乙太網路配置端口，您不需要任何特殊的配置電纜。此外，還可以輕鬆連接到 Gateway 來監控網路流量。<br><br>
+       
+       針對DIN導軌安裝進行了最佳化<br>
+       纖細的外形、正面網路連接器、旋入式串列線連接器和整齊的線纜紮帶確保了通訊協議轉換模組的安裝和連接快速簡單。<br><br>
+       
+       診斷<br>
+       當您開啟通訊協議轉換模組 Web 介面時，您會立即看到 Modbus/TCP 連線和序列連線的狀態。您甚至可以查看各個串行節點的狀態。它還配備了串行日誌和事件日誌以供進一步分析。<br><br>
+       
+       支持<br>
+       有時您會遇到需要幫助的問題。這就是為什麼我們在使用者介面中包含一個包含聯絡資訊的支援頁面。甚至還有一個按鈕可以產生支援包以簡化故障排除。<br><br>
+
+
+      
+    </div>
+            
         
-        <div class="media-container-row">
-            <div class="media-block" style="width: 49%;">
-
-                    <img src="img/anybus_3.jpg" id="img3" style="width: 100%;">
-
-            </div>
-            <div class="step-container" style="padding-left: 50px;" id="step_2">
-                <div class="card">
-                    <div class="step-element d-flex">
-                    <br/>
-                    <br/>
-                                
-                        <div class="step-text-content">
-                            <br/>
-                            <br/>
-                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><div class="texts">Anybus X Gateway 系列</div>
-                          </h4>
-                            <p class="mbr-step-text mbr-fonts-style display-7">
-                                <span class="texts">Network to Network Gateways
-                                連接任何兩個現場工業通訊總線/通業乙太網路總線或PLC通訊系統
-                                </span>
-                                <br/>
-                                <br/>
-                                <span class="texts">通訊協議模組種類選擇與介紹:
-                                開始選擇你的兩種協議轉換應用機種
-                                </span>
-                                <br/><br/>
-                                <div id="button_1">
-                                    <span class="texts">
-                                        <a href="https://www.hms-networks.com/product-finder?filter=eyJhcHBsaWVkRmlsdGVycyI6W3siZmllbGROYW1lIjoiUElNTWFya2V0aW5nQ2F0ZWdvcnkiLCJmaWx0ZXJWYWx1ZXMiOlt7ImZpbHRlclZhbHVlIjoiTmV0d29yayUyMGdhdGV3YXlzIiwiaXNDdXN0b20iOmZhbHNlfV19LHsiZmllbGROYW1lIjoiYnJhbmRzIiwiZmlsdGVyVmFsdWVzIjpbeyJmaWx0ZXJWYWx1ZSI6IkFueWJ1cyIsImlzQ3VzdG9tIjpmYWxzZX1dfSx7ImZpZWxkTmFtZSI6IlBJTUxpZmVjeWNsZVN0YXRlIiwiZmlsdGVyVmFsdWVzIjpbeyJmaWx0ZXJWYWx1ZSI6ImFjdGl2ZSIsImlzQ3VzdG9tIjpmYWxzZX0seyJmaWx0ZXJWYWx1ZSI6ImxpbWl0ZWQiLCJpc0N1c3RvbSI6ZmFsc2V9LHsiZmlsdGVyVmFsdWUiOiJtYXR1cmUiLCJpc0N1c3RvbSI6ZmFsc2V9LHsiZmlsdGVyVmFsdWUiOiJyYW1wdXAiLCJpc0N1c3RvbSI6ZmFsc2V9XX1dLCJsYXN0U2VsZWN0ZWRGaWx0ZXJHcm91cE5hbWUiOiJQSU1NYXJrZXRpbmdDYXRlZ29yeSIsImlzRGVzZWxlY3RlZCI6ZmFsc2V9" target="_blank">
-                                            <button id="button-back_1" style="letter-spacing:3px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;text-align: center;">
-                                                <div class="texts" style="color:#FFFFFF">立即瀏覽</div>
-                                            </button>
-                                        </a> 
-                                    </span>
-                                </div>
-                                <br/>
-                          
-
-                          </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-        <div  style="margin-top: 50px ;margin-bottom: 50px;">
-            <img src="img/anybus_4_1.jpg" id="img4" style="width: 100%;">
-        </div>
     </div>
 </section>
+
 <!--FOOT-->
 <section style="background-color: #d8d8d8;">
     <div class="container">
@@ -914,7 +670,7 @@
 
                                   <div style="text-align: center;">
                                   <a  style="padding-right: 2%;" href="subscribe.html" target="_blank">
-                                    <button id="btn1" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;margin-top: 50px;">
+                                    <button id="btn" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;margin-top: 50px;">
                                         <div class="texts" style="position:relative;left:3px;color:#FFFFFF;font-family: Arial, Helvetica, sans-serif;">前往訂閱</div>
                                     </button>
                                 </a> 
@@ -932,6 +688,7 @@
     </div>
 
 </section>
+
 <section >
     <div class="bigbox align-center">
         <div class=" smallbox s-size">
@@ -955,7 +712,7 @@
             <a href="codesys.html" >CODESYS SoftPLC</a><br/>
             <a >PC BASED IPC</a><br/>
             <a href="siemens.html" >SIEMENS 系列產品</a><br/>
-	        <a href="anybuswifi.html" >Anybus Wireless</a><br/>
+	        <a href="anybuswifi.html" >Anybus- Wireless</a><br/>
             <a href="jmobile.html" >Jmobile HMI</a>
         </div>
         <div class="smallbox s-size" >
@@ -967,7 +724,6 @@
             <a href="camera.html" >監控與安防攝影機</a><br/>
             <a href="download/司騰達BHP_電源供應器型錄.pdf" target="_blank" >電源供應器</a><br/>
         </div>
-        
         <div class="smallbox s-size" >
             <div class="big"> 研發服務</div>
             <a href="research.html" >專案研究開發服務</a>
@@ -981,7 +737,7 @@
             <a href="https://www.facebook.com/bhpsales/?ref=bookmarks" target="_blank" >FB司騰達</a><br/>
             <a href="https://www.facebook.com/groups/1980684922014531/" target="_blank" >FB台灣工業物聯網</a><br/>
             <a href="https://www.facebook.com/groups/183076942588467/?ref=bookmarks" target="_blank" >FB codesys</a><br/>   
-            <a href="https://bobblog.pixnet.net/blog" target="_blank" >部落格</a><br/>
+            <a href="https://www.facebook.com/groups/183076942588467/?ref=bookmarks" target="_blank" >部落格</a><br/>
             <a href="https://www.facebook.com/ProfiBus-ProfiNet-International-台灣工業網路協會-1865149806869030" target="_blank" >台灣工業網路協會</a><br/>
             <a href="https://www.youtube.com/channel/UCHdS93t57hegNhIsPErgF1g" target="_blank" >司騰達線上直播教育平台</a><br/>
         </div>
@@ -1011,7 +767,7 @@
     </div>
 </section>
 <!--FOOT.-->
-
+ 
   <script src="assets/web/assets/jquery/jquery.min.js"></script>
   <script src="assets/popper/popper.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -1026,5 +782,6 @@
   <script src="assets/theme/js/script.js"></script>
   <script src="assets/slidervideo/script.js"></script>
   
+
 </body>
 </html>
