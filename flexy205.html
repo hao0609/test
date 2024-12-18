@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html  >
 <head>
   <!-- Site made with Mobirise Website Builder v4.12.3, https://mobirise.com -->
@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   <style type="text/css">
   @import url("css/mycss.css");
@@ -30,12 +32,14 @@
   .box {
 	max-height: 300px;
 }
-
+.newstext{ font-weight:bold; font-family:微軟正黑體; font-size:20px}
+  .newstext>span{ font-weight:bold; font-family:Valken;color:#ba1a34;}
+  .newstext.red{ color:#ba1a34;}
 
   #back{ border:1px #DCCECE solid;}
   #back:hover{background-color:#005578;}
-  #button-back:hover{background-color:#003388}
-  #button-back{background-color:#003344}
+  .button-back:hover{background-color:#003388}
+  .button-back{background-color:#003344}
   #btn1{ background-color:#0B0B0B}
   #btn1:hover{background-color:#3D59DB}
   .videobox {
@@ -52,33 +56,132 @@
     width: 100%;
     height: 100%;
 }
+.dropdown-menu .dropdown-submenu {padding-top: 0px !important; padding-bottom: 0px !important;}
+#em_Catalog {top: -40px !important} 
+
+.white {
+    color: #fff !important
+}
+#ribbon, #mainContentPlh_C298_Col00 {
+    position:relative;
+}
+
+#ribbon::before {
+    content: "最受歡迎的";
+    position: absolute;
+    font-size: 16px;
+    top: 0;
+    right: 0;
+    transform: translate(29.29%, -100%) rotate(45deg);
+    color: #fff;
+    text-align: center;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    transform-origin: bottom left;
+    padding: 5px 35px 11px;
+    background: #1268B3;
+    background-clip: padding-box;
+    clip-path: polygon(0 0,100% 0,100% 100%,calc(100% - 6px) calc(100% - 6px), 6px calc(100% - 6px),0 100%);
+    -webkit-mask: linear-gradient(135deg,transparent calc(50% - 6px * 0.707), #fff 0) bottom left,
+    linear-gradient(-135deg, transparent calc(50% - 6px * 0.707), #fff 0) bottom right;
+    -webkit-mask-size: 300vmax 300vmax;
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+}
+#rowheader p{
+    text-align: left !important; 
+}
+#Talk2M_Table p {margin-bottom: 0px !important; padding: 10px; text-align: center;}
+#lng_box {left:-250px !important}
+.dropdown_li{
+    text-align: center;
+    padding: 5px 30px; 
+    margin: 5px 0;
+    border: 1px solid ;
+    border-radius: 5px;
+    height: 46px;
+    display: inline-block;
+     color: #000000;
+     background-color: white;
+     align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.dropdown_li:hover{
+    background: #003344;color: white; cursor: pointer;
+}
+
+@media screen and (max-width: 1456.5px){ #lng_box {left: 0px !important;} }
 @media screen and (max-width: 900px){
 
 #btn{position: relative; right:0px !important;bottom:50px !important} 
 #img{padding-top: 0px !important;position: relative;right: 25px !important;width: 115% !important; padding-left: 0px !important;}
-#btn3{position: relative; padding-top: 10px;left: 0rem !important;bottom: 165px !important;}
+#btn3{position: relative; padding-top: 10px;left: 0rem !important;bottom: 165px !important; text-align: center; width: 100% !important}
 #btn1{position: relative; right:0px !important;bottom:50px !important} 
 #a1{text-align: center !important;text-indent: 0px !important}
-#button-back{letter-spacing:2px !important}
+.button-back{letter-spacing:2px !important}
 #img_M2web {width: 100% !important; position: relative; top: 0px !important; right: 0px !important; }
 #step {position: relative; left: 0px !important;}
 #a{padding-right: 0% !important;}
+#carouselExampleIndicators { width: 100% !important;position: relative;right:0px !important;top: 0px !important;}
+#step2{ display: none;}
+#step3{ display: contents !important;}
+#img_2371{margin-right: 0px !important;}
+#img_3209{margin-top: 3%!important;}
+#img_SDcard{margin-top: 3%!important;}
+#img_line{width:100% !important; padding-top: 0px !important; right: 0px !important;}
+#img_T2M{right: 0px !important;}
+#img_100 {width: 100%;}
+#em_Catalog {top: 0px !important} 
+        .dropdown .text-black.dropdown-item.dropdown-toggle.display-4 .left-1 {text-indent: 0px !important;}
+        .dropdown-menu.dropdown-submenu .text-black.dropdown-item.display-4 .left-2{text-indent: 0px !important;}
+        .dropdown-menu.dropdown-submenu .text-black.dropdown-item.display-4 .left-3 {text-indent: 0px !important;}
+        .dropdown-menu.dropdown-submenu .text-black.dropdown-item.display-4 .left-73 {text-indent: 0px !important;}
+        .dropdown-menu.dropdown-submenu .text-black.dropdown-item.display-4 .left-77 {text-indent: 0px !important;}
+        .text-black.dropdown-item.dropdown-toggle.display-4 .left-5 .texts {text-indent: 0px !important;}
+        .dropdown-menu .text-black.dropdown-item.display-4 .left-4 {text-indent: 0px !important;}
+        .dropdown-menu .text-black.dropdown-item.display-4 .left-6 {text-indent: 0px !important;}
+        .dropdown-menu.dropdown-submenu .text-black.dropdown-item.display-4 .left-9 {text-indent: 0px !important;}
+        .dropdown-menu.dropdown-submenu .text-black.dropdown-item.display-4 .left-10 {text-indent: 0px !important;}
+        .dropdown-menu .text-black.dropdown-item.display-4 .left-11 {text-indent: 0px !important;}
+        .dropdown-menu .text-black.dropdown-item.display-4 .left-12 {text-indent: 0px !important;}
+        .text-black.dropdown-item.display-4 .left-13 .texts {text-indent: 0px !important;}
+        .dropdown-menu .text-black.dropdown-item.display-4 .left-14{text-indent: 0px !important;}
+        .dropdown-menu .text-black.dropdown-item.display-4 #COSYPLUS {text-indent: 0px !important;}
+        .dropdown .text-black.dropdown-item.dropdown-toggle.display-4 .left-15 {text-indent: 0px !important;}
+        .navbar-nav.nav-dropdown.nav-right .nav-item.dropdown .left-16{text-indent: 0px !important;}
+        .text-black.dropdown-item.display-4 .left-17 .texts {text-indent: 0px !important;}
+        .dropdown-menu .text-black.dropdown-item.display-4 .left-18 {text-indent: 0px !important;}
+        .text-black.dropdown-item.display-4 .left-19 .texts{text-indent: 0px !important;}
+        .dropdown-menu .text-black.dropdown-item.display-4 .left-20 {text-indent: 0px !important;}
+        .text-black.dropdown-item.display-4 .left-21 .texts {text-indent: 0px !important;}
+        .text-black.dropdown-item.display-4 .left-22 .texts {text-indent: 0px !important;}
+        .text-black.dropdown-item.display-4 .left-23 .texts {text-indent: 0px !important;}
+        .dropdown-menu.dropdown-submenu .text-black.dropdown-item.display-4 .left-23 {text-indent: 0px !important;}
+        .dropdown-menu.dropdown-submenu .text-black.dropdown-item.display-4 .left-65 {text-indent: 0px !important;}
+        #drop{text-indent: 0px !important;}
+
+        #Talk2M_title {padding: 0px !important; font-size: 1rem;}
+        #ribbon::before {display: none !important;}
+        #Logo{margin-right: 0px !important}
+        .dropdown_li { padding: 5px 23px !important;}
 }
+
 @media screen and (max-width: 375px){
 
 
 #btn1{position: relative; right:0px !important;bottom:50px !important} 
 #plctext{font-size: 25px !important;}
 #a1{text-align: center !important;text-indent: 0px !important}
-#button-back{letter-spacing:0px !important}
+.button-back{letter-spacing:0px !important}
+.dropdown_li { padding: 5px 20px !important;}
 }
   </style>
 </head>
 <body>
-  <section class="menu cid-rVKbCGsdaQ" once="menu" id="menu2-9x">
-
-    
-
+<!-- menu --> 
+<section class="menu cid-rVKbCGsdaQ" once="menu" id="menu2-9x">
     <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <div class="hamburger">
@@ -92,15 +195,29 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="index.html">
-                        <img src="assets/images/20191018logo-4-602x115.png" alt="Mobirise" title="" style="height: 3.9rem;">
+                        <img src="assets/images/20191018logo-4-602x115.png" alt="Mobirise" title="" style="height:3rem;margin-right: 50px;" id="Logo">
                     </a>
                 </span>
                 
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-black display-4" href="about.html"><div class="texts">關於我們</div></a>
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                <li class="nav-item dropdown">
+                    <a class="nav-link link text-black dropdown-toggle display-4" aria-expanded="false"  data-toggle="dropdown-submenu">
+                        <div class="texts">關於我們</div>
+                    </a>
+                    <div class="dropdown-menu">
+                        
+                        
+                            <a id="back" href="about.html" target="_blank" class="text-black dropdown-item display-4" >
+                                <div class="texts" style="text-indent: -15px"  id="drop">公司介紹</div>
+                            </a>
+                            <a id="back" href="Certificate.html" target="_blank" class="text-black dropdown-item display-4" >
+                                <div class="texts"  style="text-indent: -15px"  id="drop">相關證書</div>
+                            </a>
+                        
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link text-black display-4" href="contact.html">
@@ -114,56 +231,100 @@
                 </li>
                 <li class="nav-item dropdown">
                 	<a class="nav-link link text-black dropdown-toggle display-4" aria-expanded="false"  data-toggle="dropdown-submenu">
-                    	<div class="texts">產品資訊&nbsp;</div>
+                    	<div class="texts">產品資訊</div>
                     </a>
                     <div class="dropdown-menu">
                     	<div class="dropdown">
-                        	<a id="back" class="text-black dropdown-item dropdown-toggle display-4"  data-toggle="dropdown-submenu" aria-expanded="false">
-                            	<div class="left-1">HMS- EWON</div>
+                        	<a id="back" class="text-black dropdown-item dropdown-toggle display-4"  data-toggle="dropdown-submenu" aria-expanded="false" >
+                            	<div class="left-4">HMS- EWON</div>
                             </a>
                             <div class="dropdown-menu dropdown-submenu">
-                            	<a id="back" class="text-black dropdown-item display-4" href="flexy205.html">
+                            	<a id="back" class="text-black dropdown-item display-4" href="flexy205.html" target="_blank">
                             		<div class="left-2">FLEXY 205</div>
                             	</a>
-                            	<a id="back" href="cosy131.html" target="new" class="text-black dropdown-item display-4">
+                            	<a id="back" href="cosy131.html" class="text-black dropdown-item display-4" target="_blank">
                             		<div class="left-3">COSY 131</div>
                             	</a>
+                                <a id="back" href="cosy.html" class="text-black dropdown-item display-4" target="_blank">
+                                    <div style="text-indent: -40px;" id="COSYPLUS">COSY +</div>
+                                </a>
+                                <a id="back" href="Talk2M.html" class="text-black dropdown-item display-4" target="_blank">
+                                    <div style="text-indent: -40px;" id="COSYPLUS">Talk2M</div>
+                                </a>
                             </div>
                         </div>
-                        <a id="back" href="anybus.html" target="_blank" class="text-black dropdown-item display-4">
+                        <div class="dropdown">
+                             <a id="back" class="text-black dropdown-item dropdown-toggle display-4"  data-toggle="dropdown-submenu" aria-expanded="false">
+                       
                         	<div class="left-4">HMS- Anybus</div>
+                            </a>
+                             <div class="dropdown-menu dropdown-submenu">
+                                <a id="back" href="anybus.html" target="_blank" class="text-black dropdown-item display-4">
+                                <div class="left-2">Anybus Gateway </div><div class="texts"> 通訊協議轉換模組</div>
+                                </a>
+                                <a id="back" href="anybuswifi.html" target="_blank" class="text-black dropdown-item display-4">
+                                    <div  style="text-indent: -95px;" id="drop">Anybus Wireless </div><div class="texts"> 無線堡</div>
+                                </a>
+
+                            </div>
+                        </div>
+                        <a id="back" href="Intesis.html" target="_blank" class="text-black dropdown-item display-4">
+                        	<div class="left-4">HMS- Intesis</div>
                         </a>
-                        <a id="back" href="anybuswifi.html" target="_blank" class="text-black dropdown-item display-4" >
-                        	<div class="left-4">Anybus Wi-Fi</div>
+                   
+                          <a id="back" href="wifi.html" target="_blank" class="text-black dropdown-item display-4" >
+                        	<div class="texts" style="text-indent: -5px;" id="drop">工業級無線2.4G,5G Wi-Fi/4G/GPS通訊解決方案</div>
                         </a>
                         <div class="dropdown">
                         	<a id="back" class="text-black dropdown-item dropdown-toggle display-4"  data-toggle="dropdown-submenu" aria-expanded="false">
-                            	<div class="left-5">
+                            	<div class="left-4">
                                 	<div class="texts">中央監控圖控系統</div>
                                 </div>
                             </a>
                             <div class="dropdown-menu dropdown-submenu">
+                                <a id="back" href="jmobile.html" target="_blank" class="text-black dropdown-item display-4" >
+                                    <div style="text-indent: -40px" id="drop">Jmobile HMI</div>
+                                </a>
                             	<a id="back" href="i4scada.html" target="_blank" class="text-black dropdown-item display-4" >
-                                	<div class="left-8">i4SCADA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                                	<div style="text-indent: -65px" id="drop">i4SCADA</div>
                                 </a>
                                 <a id="back" class="text-black dropdown-item display-4" >
-                                	<div class="left-10">SIEMENS WinCC</div>
+                                	<div style="text-indent: -15px" id="drop">SIEMENS WinCC</div>
                                 </a>
+
+                              
                             </div>
                         </div>
-                        <a id="back" class="text-black dropdown-item display-4" >
-                        	<div class="left-6">FACTORY-IO - 3D</div>
-                            <div class="texts">虛擬工廠自動化培訓軟體</div>
+                       
+                        <div class="dropdown">
+                            <a id="back" class="text-black dropdown-item dropdown-toggle display-4"  data-toggle="dropdown-submenu" aria-expanded="false">
+                      
+                           <div class="left-4">CODESYS SoftPLC</div>
+                           </a>
+                            <div class="dropdown-menu dropdown-submenu">
+                                <a id="back" href="codesys.html" target="_blank" class="text-black dropdown-item display-4">
+                                    <div style="text-indent: -25px" id="drop">CODESYS PC Based</div>
+                                </a>
+                                <a id="back" href="CDS_CPX.html" target="_blank" class="text-black dropdown-item display-4">
+                                    <div style="text-indent: -15px" id="drop">CODESYS PLC Based</div>
+                                </a>
+
+                           </div>
+                       </div>
+                      <!--
+                        <a id="back" href="codesys.html" target="_blank" class="text-black dropdown-item display-4">
+                        	<div class="left-14">CODESYS SoftPLC</div>
                         </a>
+                        -->
                         <a id="back" href="siemens.html" target="_blank" class="text-black dropdown-item display-4" >
-                        	<div class="left-11"><div class="texts">SIEMENS 系列產品&nbsp;</div></div>
+                        	<div class="left-11"><div class="texts">SIEMENS 系列產品</div></div>
                         </a>
+                        
                         <a id="back" href="WAGO.html" target="_blank" class="text-black dropdown-item display-4" >
-                        	<div class="left-11">WAGO 系列產品</div>
-                        </a>
-                        <a id="back" href="jmobile.html" target="_blank" class="text-black dropdown-item display-4" >
-                        	<div class="left-11">Jmobile HMI</div>
-                        </a>
+                        	<div class="left-11"><div class="texts">WAGO 系列產品</div></div>
+                        </a> 
+
+                    
                         <!--<a id="back" class="text-black dropdown-item display-4" >
                            	<div class="left-13">
                                 <div class="texts">SIEMENS 伺服馬達</div>
@@ -174,45 +335,120 @@
                             	<div class="texts">施耐德變頻器</div>
                             </div>
                         </a>
-						<a id="back" href="face_sensor.html" target="_blank" class="text-black dropdown-item display-4" >
-                            <div class="left-13">
-                            	<div class="texts">人臉額溫感測儀</div>
-                            </div>
-                        </a>
-						<a id="back" href="sensor.html" target="_blank" class="text-black dropdown-item display-4" >
-                            <div class="left-13">
-                            	<div class="texts">環境品質監控</div>
-                            </div>
-                        </a>
-						<a id="back" href="camera.html" target="_blank" class="text-black dropdown-item display-4" >
-                            <div class="left-13">
-                            	<div class="texts">監控與安防攝影機</div>
-                            </div>
-                        </a>
-                        <a id="back" href="codesys.html" target="_blank" class="text-black dropdown-item display-4">
-                        	<div class="left-14">CODESYS SoftPLC</div>
-                        </a>
+                        <!--
+                     <a id="back" class="text-black dropdown-item display-4" href="index.html#FactoryIO">
+                        	<div class="left-6">FACTORY-IO - 3D</div>
+                            <div class="texts">虛擬工廠自動化培訓軟體</div>
+                            
+                            
+                        </a>-->
+                        
                         <div class="dropdown">
                         	<a id="back" class="text-black dropdown-item dropdown-toggle display-4"  data-toggle="dropdown-submenu" aria-expanded="false">
+                            	<div class="left-11"><div class="texts">虛實整合模擬軟體方案</div></div>
+                            </a>
+                            <div class="dropdown-menu dropdown-submenu">
+                                <a id="back" href="FactoryIO.html" target="_blank" class="text-black dropdown-item display-4" >
+                                	<div style="text-indent: -53px" id="drop">Factory I/O 3D虛擬實境工廠</div>
+                                </a>
+                                <a id="back" href="HOMEIO.html" target="_blank" class="text-black dropdown-item display-4" >
+                                    <div style="text-indent: -10px" id="drop">Home I/O 家庭自動化的元宇宙模型</div>
+                                </a>
+                            	
+                                <a id="back" href="CIROS.html" target="_blank" class="text-black dropdown-item display-4" >
+                                	<div style="text-indent: -97px" id="drop">CIROS 國際賽指定軟體</div>
+                                </a>
+
+                              
+                            </div>
+                        </div>
+					
+                        
+                        <div class="dropdown">
+                        	<a id="back" class="text-black dropdown-item dropdown-toggle display-4"  data-toggle="dropdown-submenu" aria-expanded="false" >
                         		<div class="left-15">PC BASED IPC</div>
                         	</a>
-                        	<div class="dropdown-menu dropdown-submenu">
-                        		<a id="back"  href="pcbasedipc_working.html" class="text-black dropdown-item display-4" >
+                            <div class="dropdown-menu dropdown-submenu">
+                        		<a id="back" href="pcbasedipc_working.html" class="text-black dropdown-item display-4" >
                             		<div class="left-23">BOX PC</div>
                             	</a>
+                                <!--
                             	<a id="back" class="text-black dropdown-item display-4" >
-                            		<div class="left-15">
+                            		<div  style="text-indent: -5px" id="drop">
                                 		<div class="texts">觸控電腦</div>
                                 	</div>
-                            	</a>
+                            	</a>-->
                         	</div>
                     	</div>
+                        <div class="dropdown">
+                        	<a id="back" class="text-black dropdown-item dropdown-toggle display-4"  data-toggle="dropdown-submenu" aria-expanded="false" >
+                        		<div class="left-15 "> <div class="texts">物聯網監測解決方案</div></div>
+                        	</a>
+                            <div class="dropdown-menu dropdown-submenu">
+                                <a id="back" href="face_sensor.html" target="_blank" class="text-black dropdown-item display-4" >
+                                    <div style="text-indent: -25px;"id="drop">
+                                        <div class="texts">人臉額溫感測儀</div>
+                                    </div>
+                                </a>
+                                <a id="back" href="sensor.html" target="_blank" class="text-black dropdown-item display-4" >
+                                    <div style="text-indent: -40px;"id="drop">
+                                        <div class="texts">環境品質監控</div>
+                                    </div>
+                                </a>
+                                <a id="back" href="camera.html" target="_blank" class="text-black dropdown-item display-4" >
+                                    <div style="text-indent: -10px;"id="drop">
+                                        <div class="texts">監控與安防攝影機</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                         <a id="back" href="linepush.html" target="_blank" class="text-black dropdown-item display-4" >
                             <div class="left-13">
                             	<div class="texts">Line推播器</div>
                             </div>
                         </a>
+                        <div class="dropdown">
+                        	<a id="back" class="text-black dropdown-item dropdown-toggle display-4"  data-toggle="dropdown-submenu" aria-expanded="false" >
+                        		<div class="left-15 "> <div class="texts">工控電料</div></div>
+                        	</a>
+                            <div class="dropdown-menu dropdown-submenu"  id="em_Catalog">
+                                <a id="back"  href="download/明緯電源供應器型錄_BHP_A4.pdf" target="_blank" class="text-black dropdown-item display-4" >
+                                    <div style="text-indent: -10px;"id="drop">
+                                        <div class="texts">明緯電源供應器型錄</div>
+                                    </div>
+                                </a>   
+                                <a id="back" href="download/西門子工控電料型錄_BHP_A1.pdf" target="_blank" class="text-black dropdown-item display-4" >
+                                    <div style="text-indent: -10px;"id="drop">
+                                        <div class="texts">西門子工控電料型錄</div>
+                                    </div>
+                                </a>
+                                 <!---
+                                <a id="back" href="download/西門子IOT2050型錄_A4.pdf" target="_blank" class="text-black dropdown-item display-4" >
+                                    <div style="text-indent: -40px;"id="drop">
+                                        <div class="texts">西門子IOT2050智能閘道器型錄</div>
+                                    </div>
+                                </a>
+                                <a id="back"  href="download/西門子LOGO!_KNX_建築自動化控制器.pdf" target="_blank" class="text-black dropdown-item display-4" >
+                                    <div style="text-indent: -15px;"id="drop">
+                                        <div class="texts">西門子LOGO!KNX 通訊控制器型錄</div>
+                                    </div>
+                                </a> 
+                                -->                           
+                            </div>
+                        </div>
+                        
                     </div>
+                </li>
+                <li class="nav-item">
+                	<a  href="productnews.html" target="_blank" class="nav-link link text-black display-4">
+                    	<div class="texts">產品新聞</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a  href="success_case.html" target="_blank" class="nav-link link text-black display-4">
+                    	<div class="texts">成功案例</div>
+                    </a>
+            
                 </li>
 				<li class="nav-item">
                 	<a href="research.html" target="_blank" class="nav-link link text-black display-4" >
@@ -229,23 +465,42 @@
                     	<div class="texts">熱銷書籍</div>
                 	</a>
                 </li>
-                <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                 	<a class="nav-link link text-black dropdown-toggle display-4"  data-toggle="dropdown-submenu" aria-expanded="false">
-                    	<div class="texts">成功案例</div>
+                    	<div class="texts">精選案例</div>
                     </a>
                     <div class="dropdown-menu">
-                    	<a id="back" class="text-black dropdown-item display-4">
+                    	<a id="back" href="codesys.html" target="_blank" class="text-black dropdown-item display-4">
+                        	<div class="left-25">
+                            	<div class="texts">IIOT 跨國遠端連線監控設備</div>
+                            </div>
+                        </a>
+                   
+                    	<a id="back" href="codesys.html" target="_blank" class="text-black dropdown-item display-4">
+                        	<div class="left-25">
+                            	<div class="texts">IIOT 跨國遠程連線數據採集</div>
+                            </div>
+                        </a>
+
+                        <a id="back" href="codesys.html" target="_blank" class="text-black dropdown-item display-4">
                         	<div class="left-22">
-                            	<div class="texts">過去的成功案例</div>
+                            	<div class="texts">HTML5 中央監控 SCADA</div>
+                            </div>
+                        </a>
+                        <a id="back" href="codesys.html" target="_blank" class="text-black dropdown-item display-4">
+                        	<div class="left-22">
+                            	<div class="texts">CODESYS 機械控制</div>
                             </div>
                         </a>
                     </div>
-                </li>
+                </li>-->
+               
                 <li class="nav-item">
                 	<a href="training.html" target="_blank" class="nav-link link text-black display-4" >
                     	<div class="texts">訓練課程</div>
                     </a>
                 </li>
+                <!--
                 <li class="nav-item dropdown open">
                 	<a class="nav-link link text-black dropdown-toggle display-4"  aria-expanded="true" data-toggle="dropdown-submenu">
                     	<div class="texts">下載專區</div>
@@ -263,50 +518,55 @@
                         </a>
                     </div>
                 </li>
+                -->
                 <li class="nav-item dropdown">
                 	<a class="nav-link link text-black dropdown-toggle display-4"  data-toggle="dropdown-submenu" aria-expanded="false">
                     	<div class="texts">社群論壇</div>
                     </a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu dropdown-menu" >
                     	<a id="back" href="https://www.facebook.com/bhpsales/?ref=bookmarks" target="_blank" class="text-black dropdown-item display-4">
                     		
-                        	<div style=" text-indent: -90px;" id="a1" >
+                        	<div style=" text-indent: -95px;" id="a1">
                         		<div class="texts">FB 司騰達</div>
                         	</div>
                     	</a>
                     	<a id="back" href="https://www.facebook.com/groups/1980684922014531/" target="_blank" class="text-black dropdown-item display-4">
-                    		<div style=" text-indent: -45px;" id="a1" >  
+                    	<div style=" text-indent: -55px;" id="a1">
                         	<div class="texts">FB 台灣工業物聯網</div>
                         </div>
                     	</a>
                     	<a id="back" href="https://www.facebook.com/groups/183076942588467/?ref=bookmarks" target="new" class="text-black dropdown-item display-4">
-                    		<div >
-                                <div style=" text-indent: -90px;" id="a1" class="texts">FB  codesys</div>
+                    		<div style=" text-indent: -95px;" id="a1">
+                                <div  class="texts">FB  codesys</div>
                                  </div>
                     	</a>
-                    	<a id="back" href="https://blog.xuite.net/tiaplc/twblog/588971319" target="_blank" class="text-black dropdown-item display-4">
-                    		<div  style=" text-indent: -90px;" id="a1">
+                    	<a id="back" href="https://bobblog.pixnet.net/blog" target="_blank" class="text-black dropdown-item display-4">
+                    		<div style=" text-indent: -95px;" id="a1">
                         		
                                     <div class="texts">部落格</div>
                         	</div>
                     	</a>
                     	<a id="back" href="https://www.facebook.com/ProfiBus-ProfiNet-International-%E5%8F%B0%E7%81%A3%E5%B7%A5%E6%A5%AD%E7%B6%B2%E8%B7%AF%E5%8D%94%E6%9C%83-1865149806869030/" target="_blank" class="text-black dropdown-item display-4">
-                    		<div  style=" text-indent: -50px;" id="a1">
+                    		<div style=" text-indent: -60px;" id="a1">
                         		<div class="texts">台灣工業網路協會</div>
                         	</div>
                     	</a>
                         <a id="back" href="https://www.youtube.com/channel/UCHdS93t57hegNhIsPErgF1g" target="_blank" class="text-black dropdown-item display-4">
-                    		
+                    		<div  style=" text-indent: -15px;" id="a1">
                         		<div class="texts" >司騰達線上直播教育平台</div>
                         	
+                            </div>
                     	</a>
                         
                     </div>
                 </li>
+                
+               <!--
                 <li class="nav-item dropdown open">
                 	<a class="nav-link link text-black dropdown-toggle display-4" href="index.html" aria-expanded="true" data-toggle="dropdown-submenu">
                     	<div class="texts">語系</div>
                     </a>
+                    
                     <div class="dropdown-menu">
                     	<a id="back" class="text-black dropdown-item display-4" href="index.html" aria-expanded="true">
                         	<div class="texts">中文</div>
@@ -314,16 +574,31 @@
                         <a id="back" class="text-black dropdown-item display-4" href="index.html" aria-expanded="true">English</a>
                     </div>
                 </li>
+                -->
+                
+                <li class="nav-item dropdown open">
+                	<a class="nav-link link text-black dropdown-toggle display-4" href="index.html" aria-expanded="true" data-toggle="dropdown-submenu">
+                    	<div class="texts">Language</div>
+                    </a>
+                    
+                    <div class="dropdown-menu" id="lng_box">
+                    	<a id="back" class="text-black dropdown-item "  aria-expanded="true" style="text-align: center;">
+                        	<div class="texts">Recommend using Google Translate</div>
+                        </a>
+                    </div>
+                    
+                </li>
+         
             </ul>
         </div>
     </nav>
 </section>
-
+<!-- menu --> 
 <section class="step3 cid-rVK0Q2WBxw" id="step3-49"  style=background-image:url(img/background/flexybg1.jpg);>
   
     
     <div class="container">
-      <br><br>
+      <br>
         <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"><div class="texts" ><span style="color: #043D5D;">Ewon Flexy205  IIoT Gateway<br/>遠程資料採集運算模組</span></div></h2><br><br>
         <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><div class="texts" style="text-align: center;">
             <div class="texts">IIOT工業自動化遠程數據採集- 將OT層設備自動化數據轉換可行分析數據<br><br>
@@ -331,14 +606,14 @@
             </div>
         </h4>
         <div class="media-container-row" >
-            <div class="media-block" style="width: 50%; ">
-                 <div class="mbr-figure" style="padding-left: 18%; padding-top: 5%;"> 
-                   <b style="position: relative;left:5%;">
+            <div class="media-block" style="width: 50%; text-align: center;">
+                
                    
-                   <img src="img/flexy205.png"></b>  
-                    </div> 
+                   
+                   <img src="img/flexy205.png" style="padding-top: 55px; width: 50%; ">
+                
             </div>
-            <div class="step-container">
+            <div class="step-container" style="padding-top: 20px;">
                 <div class="card">
                     <div class="step-element d-flex">
                         <div class="step-wrapper pr-3">
@@ -381,7 +656,7 @@
                             <p class="mbr-step-text mbr-fonts-style display-7">
                                 •	<span class="texts">內建市場所有主要的PLC通訊協議，用於數據採集與本地記錄和警報通知</span>
                                 <br/>
-                                •	<span class="texts">用於遠程監控與本地監控免費網絡Dashboard 儀表板設計工具</span>
+                                •	<span class="texts">用於遠程監控與本地監控 Web Dashboard 儀表板設計工具</span>
                                 <br/>
                                 •	<span class="texts">OPC UA Server / Client 將數據發佈到工廠系統</span>
 
@@ -402,7 +677,7 @@
                             <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><div class="texts"><span style="color: #043D5D;">通過互聯網收集中央數據</span></div>
                             </h4>
                             <p class="mbr-step-text mbr-fonts-style display-7" style="padding-bottom: 30%;">
-                                •	<span class="texts">將數據發送到任何服務器（本地或云）的完全靈活性</span>
+                                •	<span class="texts">將數據發送到任何服務器（本地端或 Talk2M 工業雲）的完全靈活性</span>
                                 <br/>
                                 •	<span class="texts">HMS解決方案合作夥伴提供的即用型解決方案</span>
                                 <br/>
@@ -425,22 +700,53 @@
         </div>
 
         
-          <div style="position:relative;left: 2%;bottom:200px;" id="btn3">
+          <div style="position:relative;left: 10%;bottom:230px;display: flex;width: 375px;justify-content: center;" id="btn3">
             
-                <button id="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px">
+                <button class="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px">
                     <a  href="download/司騰達Flexy-traditonal.pdf" target="_blank" style="text-decoration:none;"><div class="texts" style="position:relative;left:1px;color:#FFFFFF">型錄下載</div>  </a> 
                 </button>
           
             
-                <button id="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;margin-left: 10px;">
+                <button class="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;margin-left: 10px;">
                     <a  href="https://drive.google.com/drive/folders/1kRcsP7nb6vOmOymnxqjxMPJzsyKDnMMv" target="_blank" style="text-decoration:none;"> <div class="texts" style="position:relative;left:3px;color:#FFFFFF">軟體下載</div>   </a>
                 </button>
          
-           
-                <button id="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;margin-left: 10px;">
-                    <a href="download/司騰達_白皮書_輕鬆安全地遠程訪問您的機器 _ Ewon社區.pdf" target="_blank" style="text-decoration:none;"> <div class="texts" style="position:relative;left:3px;color:#FFFFFF">白皮書下載</div>   </a>
-                </button>
-         
+
+                <div style="display: inline;">
+
+                    <button class="button-back" id="drop_btn" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px;margin-left: 10px;">
+                            <div class="texts" style="position:relative;left:3px;color:#FFFFFF;text-decoration:none;">白皮書下載</div>   
+                    </button>
+
+                    <ul style="margin: 0;padding: 0;list-style: none;margin-left: 10px;display: none;position: absolute;" id="dropdown_li_box">
+                        <li> 
+                            <a href="download/司騰達_白皮書_輕鬆安全地遠程訪問您的機器 _ Ewon設備.pdf" target="_blank" id="dropitem_1" class="dropdown_li"  style="text-decoration:none;">中文</a>
+                        </li>
+                        <li  > 
+                            <a href="download/司騰達_Ewon_Whitepaper_Secure-industrial-remote-connectivity-EN.pdf" target="_blank" id="dropitem_2" class="dropdown_li"  style="text-decoration:none;">English</a>
+                        </li>
+                    </ul>
+
+                    <script>
+                        $('#drop_btn').click(function(){
+                            
+                            $("#dropdown_li_box").toggle();
+                        });
+
+                        $('#dropitem_1').click(function(){
+                            console.log("Test");
+                            
+                            $("#dropdown_li_box").css("display","none")
+                        });
+
+                        $('#dropitem_2').click(function(){
+                            
+                            $("#dropdown_li_box").css("display","none")
+                        });
+
+                    </script>
+
+                </div>
             
         </div>
 
@@ -507,8 +813,8 @@
                         <div class="step-text-content">
                             
                             <p class="mbr-step-text mbr-fonts-style display-7">
-                                <span class="texts">IOT網關，用於收集和提供對工業數據的安全訪問
-我們的解決方案專注於希望保持競爭力的機械製造商。為了保持競爭力，我們的機器製造商著迷於優化其運營的各個方面。我們的數據IIoT網關Flexy與第一個安全的工業雲Talk2M的結合，使我們的客戶可以連接到他們的機器並從任何部署地點收集數據。
+                                <span class="texts">IOT Gateway，用於收集和提供對工業數據的安全訪問
+我們的解決方案專注於希望保持競爭力的機械製造商。為了保持競爭力，我們的機器製造商著迷於優化其運營的各個方面。我們的數據IIoT Gateway Flexy與第一個安全的工業雲Talk2M的結合，使我們的客戶可以連接到他們的機器並從任何部署地點收集數據。
 </span>
                                 
                             </p>
@@ -563,7 +869,7 @@
                         <div class="step-text-content">
                             
                             <p class="mbr-step-text mbr-fonts-style display-7">
-                                <span class="texts">獲得競爭優勢：將數據轉換為可操作的信息使您可以監視和改善總體設備效率（OEE）。這些關鍵參數可以在簡單的端到端儀表板解決方案中進行監控，以供您或您的客戶隨時隨地查看。這僅僅是開始。隨著客戶的成熟，您可以根據他們的要求提供更好的本地儀表板或云儀表板。</span>
+                                <span class="texts">獲得競爭優勢：將數據轉換為可操作的信息使您可以監視和改善總體設備效率（OEE）。這些關鍵參數可以在簡單的端到端儀表板解決方案中進行監控，以供您或您的客戶隨時隨地查看。這僅僅是開始。隨著客戶的成熟，您可以根據他們的要求提供更好的本地儀表板或Talk2M 工業雲儀表板。</span>
                                 
                             </p>
                         </div>
@@ -573,12 +879,58 @@
         </div>
     </div>
 </section>
+<section class="step3 " id="step3-49"  style="background-image:url(img/background/M2web.jpg);padding-top: 40px;padding-bottom: 15px;text-align: center;" >
+ 
+     
 
+    
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"><div class="texts"style="padding-left: 20px;padding-right: 20px">Talk2M Visualizaion</div></h2>   <br>
+        <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style align-center display-5"><div class="texts" style="line-height: 40px;padding-left: 20px;padding-right: 20px">使用Flexy205的Talk2M Visualizaion功能<br>讓機器設備的數據栩栩如生可視化的歷史數據圖表</div></h3>
+        <br>
+            <br>
+            
+       
+            
+        <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style align-center display-5"><div class="texts" style="line-height: 40px;padding-left: 20px;padding-right: 10px">
+            Talk2M Visualizaion 允許您透過可視化歷史數據的儀表板充分利用機器數據結合警報通知和數據報告<br>一個隨時可用的物聯網解決方案，可改善您的決策過程！適用於所有<span style="color: red;">Talk2M 專業版用戶</span></div></h3>
+      <!----  <div class="container" style="text-align:center;padding-bottom: 5%;" >
+            <img src="img/M2webYT.PNG" class="img-fluid" >
+    
+        </div>-->
+        <br>
+        <div class="videobox" >
+        <iframe width="400px" height="300px" src="https://www.youtube.com/embed/Eq_fCnLYQYQ?&playlist=Eq_fCnLYQYQ&autoplay=1&loop=1&mute=1&rel=0" frameborder="0" allowfullscreen>
+        </iframe>
+        </div>
+        <br><br>
+        <div>
+        <img src="img/visualization-dashboard-interface.png" alt="" id="img_100">
+        </div>
+
+        <div style="margin-top: 50px;margin-bottom:50px">
+            
+            <button class="button-back" style="letter-spacing:1px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px">
+                <a href="Talk2M_Visualizaion.html" target="_blank" style="text-decoration:none;"><div class="texts" style="position:relative;left:1px;color:#FFFFFF">更多 Talk2M Visualizaion 資訊</div>  </a> 
+            </button>
+      
+        
+      
+       
+     
+        
+        </div>
+    </div>
+
+    
+    
+     
+</section>
 
 
 
 <section class="step3 cid-rVK0Q5CsGW" id="step3-4b">          <!--籃底-->
-    <div class="container">
+    <div class="container" style="text-align: center">
 <img src="img/flexy205_15.jpg" class="img-fluid" alt="...">
 
 </div>
@@ -662,85 +1014,117 @@
  
 </section>
 
-<section class="step3 cid-rVK0Q6Gw44" id="step3-4c" style="padding-top: 50px; padding-bottom: 65px;">
-   <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"><div class="texts">立即登入M2web查看Flexy205設備!</div></h2>
+<section class="step3 cid-rVK0Q6Gw44" id="step3-4c" style="padding-top: 50px; padding-bottom: 65px;background-color: #daedf6;">
+   <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2" style="font-size:35px ;"><div class="texts">立即登入體驗M2web查看Flexy205設備!</div></h2>
     <br><br>
     <div class="container">
         
         <div class="media-container-row">
             <div class="media-block" style="width: 60%;">
             
-                   
-                    <img src="img/M2web_show.png" style="width: 170%;position: relative;right: 300px;top:75px" id="img_M2web">
-             
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" data-warp="true" style="width: 130%;position: relative;right:110px;"  >
+                  
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="img/M2web_show1.png" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/M2web_show.png" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="img/M2web_show2.png" alt="Third slide">
+                      </div>
+                      
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" id="slide">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"id="next"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" >
+                      <span class="carousel-control-next-icon" aria-hidden="true" id="next"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+              
+                  <div class="media-container-row"  style="padding-top:40px" id="step2">
+                    <div class="media-block"  style="width: 30%;">
+            
+                  <img src="img/bhpline_1.png"  style="width: 100%;" > 
+                     </div>
+                     <div class="step-container"  >
+                        <div class="step-text-content" style="padding-top:20px">
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5" style="font-size:20px ;"><div class="texts" style="font-size:20px ;">官方帳號ID: @bhp.tw</div>
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5" style="font-size:20px ;"><div class="texts" style="font-size:20px ;">立即加入司騰達官方LINE帳號由專人與您聯繫!</div>
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5" style="font-size:20px ;"><div class="texts" style="font-size:20px ;">傳送"我想獲得M2web體驗帳戶"等關鍵字訊息就可以獲得相關資訊!</div>
+                            
+                    </div>
+                     </div>
+                  </div>
+
             </div>
 
             <div class="step-container" >
                
                    
                              
-                        <div class="step-text-content" style="position: relative;left: 200px;" id="step">
+                        <div class="step-text-content" style="position: relative;left:110px" id="step">
                      
-                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><div class="texts">Flexy205 展示設備已上線！
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5" style="font-size:20px ;"><div class="texts">Flexy205 展示設備已上線！
                             </h4>
 
                              <br/>
-                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><div class="texts"><span style="line-height: 30px;">我們提供了Ewon Flexy205 的展示設備以及三個Talk2M免費帳戶</span></div>
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5" style="font-size:20px ;"><div class="texts"><span style="line-height: 30px;">我們提供了Ewon Flexy205 的展示設備以及Talk2M 帳戶</span></div>
                             </h4>
                                             
-                           <br>
-                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">
+                         
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5" style="font-size:20px ;">
                                 <div class="texts" >
-                                    <span style="line-height: 30px;">您只要前往M2web的網站，登入以下帳號就可以進行登入。</span><br><br>
+                                    <span style="line-height: 30px;">您只要前往M2web的網站，登入帳號就可以進行登入。</span><br><br>
 
                                 <span style="line-height: 30px; ">登入完成後就可以查看M2web的各項功能，甚至可以點選進入Flexy205展示設備查看我們所設計的Web Dashboard專案範例進行操作演示! </span>
+
+                                <span style="line-height: 30px; "><br><br>立即點選下方按鈕填寫資料已獲得體驗版帳號以及密碼! <br> <br>
+                                    也可以加入我們的司騰達的LINE官方帳號，由專人立即與您聯絡資訊!</span>
+                                    
+
                             </div>
                             </h4>
                       
 
                             
-                            
-                                <table class="table" style="table-layout: fixed;width: 100%;">
-                                    <tr>
-                                        <td>帳戶 </td> 
-                                        <td>用戶名 </td>
-                                        <td>密碼 </td>
-                                    </tr>
-                                    <tr>
-                                        <td>BHP_ewon</td> 
-                                        <td>bhpiot</td>
-                                        <td>bhpiotuser1  </td>
-                                    </tr>
-                                    <tr>
-                                        <td>BHP_ewon</td> 
-                                        <td>bhpiot_2 </td>
-                                        <td>bhpiotuser2</td>
-                                    </tr>
-                                    <tr>
-                                        <td>BHP_ewon</td> 
-                                        <td>bhpiot_3 </td>
-                                        <td>bhpiotuser3 </td>
-                                    </tr>
-                                  
-                                
-                                </table>                    
+                                             
                           
                           
                       
                   
                                 <div style="text-align: center; padding-bottom: 1%;padding-top: 1%;">
+
+                                   
+                                          
+
                                     <a  href="m2web.html" target="_blank" style="padding-right: 5%;padding-top: 20px;" id="a">
-                                        <button id="button-back" style="letter-spacing:3px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:46px">
-                                            <div class="texts" style="color:#FFFFFF;font-size: 20px;">更多M2web資訊</div>
+                                        <button class="button-back" style="letter-spacing:1.5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:46px;margin-top: 15px;">
+                                            <div class="texts" style="color:#FFFFFF;font-size: 17px;">更多M2web資訊</div>
                                         </button>
                                     </a>
                                     
-                                    <a  href="https://m2web.talk2m.com/" target="_blank" style="padding-top: 20px;">
-                                        <button id="button-back" style="letter-spacing:3px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer;  height:46px; margin-top: 10px;">
-                                            <div class="texts" style="color:#FFFFFF;font-size: 20px;">前往M2Web網站</div>
-                                        </button>
-                                    </a>
+                            
+                                   
                                 </div>
+
+                                <div class="media-container-row"  style="position: relative;top: 20px;display: none;" id="step3">
+                                    <div class="media-block"  style="text-align: center;padding-top: 50px;">
+                            
+                                  <img src="img/bhpline_1.png"  style="width: 30%;" > 
+                                     </div>
+                                     <div class="step-container"  >
+                                        <div class="step-text-content" style="text-align: center; ">
+                                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5" style="font-size:20px ;"><div class="texts" style="font-size:20px ;text-align: center;">官方帳號ID: @bhp.tw</div>
+                                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5" style="font-size:20px ;"><div class="texts" style="font-size:20px ;">立即加入司騰達官方LINE帳號由專人與您聯繫!</div>
+                                            
+                                    </div>
+                                     </div>
+                                  </div>
 
               
 
@@ -759,7 +1143,388 @@
     
     
 </section>
+<section class="step3 cid-rVK0Q6Gw44" id="step3-4c" style="padding-top: 50px; padding-bottom: 65px;background-color: #daedf6;">
+    <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"><span class="texts" style="font-size:35px ;">Flexy205 LINE 推播訊息功能應用</span></h2>
+    <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style align-center display-5">
+        <span class="texts">IIOT Flexy205 聯網 Line 推播訊息功能應用</span>
+    </h3>
+    <div class="container">
+        <div class="media-container-row">
+            <div class="media-block" style="width: 50%;">
+                
+                   
+                        <img src="img/Flexy205_line01.jpg" id="img_line" width="150%" style="position:relative;right:150px;padding-top: 20px;">
+                    
+               
+            </div>
+            <div class="step-container">
+			
+                <div class="card">
+                    <div class="step-element d-flex">         
+                        <div class="step-text-content" style="position:relative;left:140px" id="step">
+						<br>
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">Flexy205 Line 推播功能應用情境架構</span>
+                            </h4>
+                            <p class="mbr-step-text mbr-fonts-style display-7">
+								<div class="texts" style="text-align:justify;">
+								如左圖所示 Flexy205 LINE 推播警報訊息的情境模擬訊息發送流程。<br><br>
+                                
+                                左下角灰色圓圈的區域表示為工廠正在運行的設備，且都運行連接在 Flexy205 底下，當設備運行過程當中，其中一台設備發生錯誤時，Flexy205 
+                                Alarm 點位偵測到數據錯誤之後，立即發送LINE 推播警報訊息給相關維護人員。 <br><br>
+                                
+                                維護人員手機接收到LINE Notify 推播警報訊息之後，發現設備需要進行維護解決，立即打開手機瀏覽器，搜尋 M2Web 網站並且登入Talk2M 帳戶，
+                                尋找需要維護的設備所連接在哪一台Flexy205設備當中，並且連接打開 Flexy205 利用 ViewON 所設計的圖控畫面 Web Dashboard查看目前的設備狀況， 
+                                並進行維護設備解決問題。
+               
 
+
+								</div>
+								<br>
+								
+                            </p>
+
+                            <div style="text-align: center; padding-bottom: 1%;padding-top: 1%;">
+
+                                   
+                                          
+
+                                <a  href="flexy205_LINE.html" target="_blank" style="padding-right: 5%;padding-top: 20px;" id="a">
+                                    <button class="button-back" style="letter-spacing:1.5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:46px;margin-top: 15px;">
+                                        <div class="texts" style="color:#FFFFFF;font-size: 17px;">更多LINE 推播功能資訊</div>
+                                    </button>
+                                </a>
+                                
+                        
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                
+           
+			</div>
+        </div>
+       
+    </div>
+ 
+     
+     
+ </section>
+<section class="step3 cid-rVK0Q2WBxw" id="step3-49" style="padding-top: 15px;">
+
+    
+
+    
+    
+    <div class="container" id="vpn">
+       
+            <div class="media-container-row">
+                <div class="media-block" style="width: 55%;">
+                    <div class="mbr-figure" style="margin-top:10%" >
+                        <img src="img/news_1.jpg" id="img_T2M">
+                    </div>
+                </div>
+                <div class="step-container">
+                    <div class="card">
+                        <div class="step-element d-flex">
+                                   
+                            <div class="step-text-content" style="position: relative; left: 120px;" id="step">
+                                <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5">
+                                <div class="texts">Talk2M 方案增加計劃</div>
+                                </h4>
+                                <p class="mbr-step-text mbr-fonts-style display-7">
+                                <div class="texts" style="font-size:20px">VPN 流量</div><br>
+                                 <div class="texts">
+                                *Talk2M Free免費版帳戶-每月 3 GB 數據傳輸量<br>
+                                *Talk2M Light輕量版帳戶-每月 5 GB 數據傳輸量<br>
+                                *Talk2M Pro專業版帳戶-每月 20 GB 數據傳輸量</div>
+                                <br>
+                                <div class="texts" style="font-size:20px">Data Mailbox上傳資料點</div><br>
+                                 <div class="texts">
+                                *Talk2M Free免費版帳戶-500萬個數據點<br>
+                                *Talk2M Light輕量版帳戶-700萬個數據點<br>
+                                *Talk2M Pro專業版帳戶-1000萬個數據點<br><br>
+                                我們的遠程連接解決方案是通過我們的Ewon Gateway和Talk2M工業雲之間無縫集成實現的。
+                                因此，我們所有的設備都提供 VPN 工業雲連接。<br><br>
+                                隨著業務的增長和管理需求的增加，我們建議您升級到Talk2M Light輕量版或Talk2M Pro專業版本。<br><br>
+                                
+                                根據您的需求在Talk2M Free+免費版,Talk2M Light輕量版和Talk2M Pro專業版版本之間進行選擇，下表將為您展現兩方案之間的差異。
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+            </div>
+
+            
+            <div style="text-align: center; margin-top: 5%;">
+                <div style="padding-left: 10px; padding-right: 10px;">
+                <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"><span class="texts" style="font-size:30px ;">Talk2M 免費版,輕量版與專業版帳戶差異</span></h2> </div><br>
+                <!--<img src="img/Ewon_Talk2M_Comparative_Table_April_2023.jpg"  id="img_100">-->
+                <div style="display: flex;justify-content: center;">
+                    <table border="1"  class="texts" id="Talk2M_Table">
+                        <tbody>
+                            <tr role="row" >
+                                <td style="border-top: 1px solid white;border-left: 1px solid white" role="rowheader" data-celllook="4369" rowspan="2" colspan="1">
+                                <p paraid="171397149" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{13}">&nbsp;</p>
+                                </td>
+                                <td style="background-color: #043D5D;" role="columnheader" data-celllook="69905" rowspan="2" colspan="1">
+                                <h2 paraid="1778755593" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{28}" style="text-align: center;padding: 20px;" id="Talk2M_title"><span style="font-size: 1em;" class="white"><br>
+                                Talk2m free <br>免費版<br>
+                                <br>
+                                </span></h2>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="2">
+                                <td style="background-color: #043D5D;" data-celllook="69905">
+                                <h2 paraid="1109709962" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{32}" style="text-align: center;padding: 20px;" id="Talk2M_title"><span class="white"><br>
+                                Talk2m light<br>輕量版<br>
+                                <br>
+                                </span></h2>
+                                </td>
+                                <td id="ribbon" style="background-color: #043D5D;" data-celllook="69905">
+                                <h2 paraid="1316038758" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{98}" style="text-align: center;padding: 20px;" id="Talk2M_title"><span class="white"><br>
+                                Talk2m pro<br>專業版<br>
+                                <br>
+                                </span></h2>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="4">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="1152146590" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{164}">可綁定 Gateway 數量</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="237481994" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{179}"><span style="font-size: 1em;">無限制</span></p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1611013708" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{190}"><span style="font-size: 1em;">無限制</span></p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="265243458" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{201}">無限制</p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="5">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="1242590109" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{209}">可創建的使用者數量</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1028589078" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{224}">無限制</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1012301202" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{231}">無限制</p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="7387290" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{238}">無限制</p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="6">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="576873334" paraeid="{c2d5f9bd-f898-423c-aa2a-156cce341b96}{246}">使用者同時 VPN 連接數<br>(使用電腦版 Ecatcher)
+                                </p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1687699902" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{4}">1 位使用者</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1066021288" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{11}">2 位使用者</p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="1134373630" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{18}">5 位使用者</p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="7">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="369217142" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{26}">擴充額外 VPN 連線數<br>(每額外擴充連線數+4 GB VPN流量)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="856256240" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{57}">X (不可擴充)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1819923956" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{64}">X (不可擴充)</p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="241530599" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{71}">✔ (不可擴充)</p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="8">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="169159670" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{79}">每月 VPN 流量</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1706183495" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{98}">最大上限 3 GB</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1150236692" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{113}">最大上限 5 GB</p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="1156251036" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{124}"><span style="font-size: 1em;">20 GB</span></p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="9">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="1529656333" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{140}">是否可以擴充額外的 VPN 流量?</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="2114762750" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{155}">X (不可擴充)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="10515392" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{162}">X (不可擴充)</p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="1268045221" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{169}">✔ (可以擴充)</p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="10">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="1302166999" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{181}">帳戶中允許幾台行動裝置使用者同時 VPN 連線?<br>(M2web 和Ecatcher mobile)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="2022972999" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{212}">5 台裝置同時連線</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1942670842" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{219}">5 台裝置同時連線</p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="241240291" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{226}">無限制</p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="11">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="1680980612" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{234}">贈送簡訊費用<br>(應用場景例如：Ewon設備喚醒,警報訊息)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1105599027" paraeid="{9d176ae7-6569-4a20-8d1b-21d14af82a29}{253}">X (不贈送簡訊費用)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1022476178" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{5}">約 50 封簡訊<br>(國際簡訊費用另計)</p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="9991940" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{14}">約 50 封簡訊<br>(國際簡訊費用另計)</p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="13">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="854238560" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{85}">每月可使用的 Datamail box 上傳資料量</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1028511353" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{104}">最大上限 500 萬資料點</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1410161957" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{123}">最大上限 700 萬資料點</p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="1039058537" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{138}"><span style="font-size: 1em;">最大上限 1000 萬資料點</span></p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="14">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="1791320909" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{158}">是否可以擴充額外的 Datamail box 上傳資料量?</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="710318001" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{173}">X (不可擴充)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1120537542" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{180}">X (不可擴充)</p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="911653291" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{187}">✔ (可以擴充)</p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="15">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="911198025" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{199}">Talk2m 視覺化雲端服務 <br>(Talk2m visualization)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="715646761" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{210}">X (不可使用)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1174079512" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{217}"><span style="font-size: 1em;">X (不可使用)</span></p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="1393721953" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{227}"><span style="font-size: 1em;">✔ (可以使用)</span></p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="16">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="2093668192" paraeid="{857074b5-97bd-4efe-aa38-6a19336728fc}{238}">進階使用者管理權限功能</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1793310326" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{2}">X (不可使用)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="1090610476" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{9}"><span style="font-size: 1em;">X (不可使用)</span></p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="312067130" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{19}"><span style="font-size: 1em;">✔ (可以使用)</span></p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="17">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="1333585074" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{30}">是否涵蓋在 SLA 協議中? <br> Service Level Agreement (SLA)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="418807201" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{43}">X (不符合資格)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="878827385" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{50}"><span style="font-size: 1em;">✔ (符合資格)</span></p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="263684728" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{60}"><span style="font-size: 1em;">✔ (符合資格)</span></p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="18">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="851915856" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{71}">是否可以使用遠程韌體管理功能? <br> Remote firmware management</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="357667706" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{86}">X (不可使用)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="699538481" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{93}">X (不可使用)</p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="895646430" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{101}">✔ (可以使用) <br> (目前只限 COSY+ 可以使用，<br>未來將逐步更新開放更多裝置)</p>
+                                </td>
+                            </tr>
+                            <tr role="row" aria-rowindex="18">
+                                <td id="rowheader" data-celllook="4369">
+                                <p paraid="851915856" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{71}">負擔成本</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="357667706" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{86}">無須繳費 <br> (<span style="color: red;">須遵循相關使用規範，<br>確保帳戶正常運作</span>)</p>
+                                </td>
+                                <td data-celllook="4369">
+                                <p paraid="699538481" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{93}">每年一繳 <br> ( 規劃中 )</p>
+                                </td>
+                                <td data-celllook="69905">
+                                <p paraid="895646430" paraeid="{1f79f20f-2600-4ee1-b55e-6c77b57aeb0b}{101}">每年一繳</p>
+                                </td>
+                            </tr>
+                            <!--
+                            <tr role="row" aria-rowindex="2">
+                                <td style="border:none;" rowspan="2">
+                                </td>
+                                <td style="border:none;" rowspan="2">
+                                </td>
+                                <td style="background-color: #1268B3;" data-celllook="69905">
+                                <p style="text-align: center;"><a class="btn desktop" href="https://www.ewon.biz/products/Talk2m/talk2m-light">Discover Talk2m light</a></p>
+                                </td>
+                                <td style="background-color: #1268B3;" data-celllook="69905">
+                                <p style="text-align: center;"><a class="btn desktop" href="https://www.ewon.biz/products/Talk2m/talk2m-pro">Discover Talk2m pro</a></p>
+                                </td>
+                            </tr>
+                            -->
+                        </tbody>
+                    </table>
+                    </div>
+            
+            </div>
+    </div>
+    
+</section>
 <!----<section class="step3 cid-rVK0Q4ffne" id="step3-4a">  
     <div class="container">
         
@@ -905,10 +1670,414 @@
 -->
 
 
-<div class="cosy131-jpg-2 " style="padding-bottom: 5%; ">
-	<img src="img/flexy205_14.jpg" >
+<div class="cosy131-jpg-2 " style="padding-bottom: 3%; margin-top: 3%; ">
+	<img src="img/Ewon_Talk2M_map_Worldwide_2024.jpg" >
 </div>
+<section class="step3 cid-rVK0Q6Gw44" id="step3-4c">
 
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 mbr-fonts-style align-center display-2"><div class="texts">Flexy205 擴充卡使您的Flexy205功能更加齊全!</div></h2>
+        <br> 
+        <br>
+        <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style align-center display-5"><div class="texts">Ewon Flexy205配備了擴展卡，使您可以跟上通信技術的發展<br>選擇您的擴展卡使您的Flexy205功能更加齊全，構建您的完美Flexy205！</div></h3>
+        <br>
+        
+   
+     
+        <div class="media-container-row" style=" margin-bottom: 2.5%;margin-top: 2.5%;">
+            <div class="media-block" style="width: 50%;text-align: center;">
+             
+                    
+                    <img src="img/flx-3101.png"  style="width: 30%;">
+                
+            </div>
+            <div class="step-container">
+                <div class="card">
+                    <div class="step-element d-flex">
+                        <div class="step-wrapper pr-3">
+                            
+                        </div>          
+                        <div class="step-text-content">
+                    
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">WAN 乙太網路孔擴充卡</span>
+                            </h4>
+                            <p class="mbr-step-text mbr-fonts-style display-7" style="font-weight: bold;font-size: 20px;">
+                                此擴充卡具備一個乙太網路孔，可為Flexy額外增加一個WAN網域的乙太網路孔，進行網際網路連接。
+
+
+
+                                <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        型號: FLX3101
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+       <div style="text-align: center;"> <img src="img/bottomline.png" width="100%">    </div>
+        <div class="media-container-row" style=" margin-bottom:2.5%;margin-top:2.5%;">
+            <div class="media-block" style="width: 50%;text-align: center;">
+             
+                    
+                    <img src="img/flb-3271.png"  style="width: 50%; margin-right: 40px;" id="img_2371">
+                
+            </div>
+            <div class="step-container">
+                <div class="card">
+                    <div class="step-element d-flex">
+                        <div class="step-wrapper pr-3">
+                            
+                        </div>          
+                        <div class="step-text-content" style="margin-top: 2%;">
+                    
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">WIFI 擴充卡</span>
+                            </h4>
+                            <p class="mbr-step-text mbr-fonts-style display-7" style="font-weight: bold;font-size: 20px;">
+                                此擴展卡可為Flexy205增加2.4G WI-FI的外網連接方式<br/><br/>
+
+                                現今業界有越來越多的人選擇使用 WLAN（WI-FI）連接方式， 安裝此擴充卡就可以透過WIFI進行外部網路連接。 <br/><br/>
+                                
+                                WI-FI 擴展卡為工業 M2M 應用程序提供強大的聯外能力。 WLAN 技術提供高頻寬且易於部署（無需佈線）的條件，並有助於網路安全的管理。
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        型號: FLB3271
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+        <div style="text-align: center;"> <img src="img/bottomline.png" width="100%">    </div>
+        <div class="media-container-row" style=" margin-bottom: 2.5%;margin-top: 2.5%;">
+            <div class="media-block" style="width: 50%;text-align: center;">
+             
+                    
+                    <img src="img/flb-3209.png"  style="width: 35%;margin-top: 150px;" id="img_3209">
+                
+            </div>
+            <div class="step-container">
+                <div class="card">
+                    <div class="step-element d-flex">
+                        <div class="step-wrapper pr-3">
+                            
+                        </div>          
+                        <div class="step-text-content">
+                    
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">4G 無線上網LTE擴充卡</span>
+                            </h4>
+                            <p class="mbr-step-text mbr-fonts-style display-7" style="font-weight: bold;font-size: 20px;">
+                                此Flexy 4G LTE擴展卡可以透過設備當地的4G LTE網路通訊為Flexy205 提供更加便捷的網路連接方式 <br/> <br/>
+
+                                此4G LTE 擴充卡具備4種版本，分別為APAC 亞太地區版本,EU歐洲地區版本,Verizon美國電信版本和NA北美地區版本。<br/> <br/>
+
+                                EU歐洲地區版本有支援台灣各大電信業者，例如:中華電信,台灣大哥大,遠傳電信,台灣之星，使得Flexy205無須擔心對外聯網的問題! APAC亞太地區版本也支援中華電信,台灣大哥大,遠傳電信,亞太電信,以及台灣之星，
+                                對於遠程連線訪問，只需額外申請4G網路的SIM卡即可實現Talk2M遠程連線的解決方案。同樣地，對於類似SCADA的應用程序，安全的VPN連接也可以從此受益，而用戶無需在遠程站點上額外支付固定IP地址的費用。
+                                
+
+                                
+
+
+                                <br/><br/>
+                      
+                                型號: (EU版本) FLB320A  (APAC版本) FLB3209  
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div style="text-align: center;"> <img src="img/bottomline.png" width="100%">    </div>
+        <div class="media-container-row" style=" margin-bottom: 2.5%;margin-top: 2.5%;">
+            <div class="media-block" style="width: 50%;text-align: center;">
+             
+                    
+                    <img src="img/flc-3701.png"  style="width: 35%;margin-top: 3%;">
+                
+            </div>
+            <div class="step-container">
+                <div class="card">
+                    <div class="step-element d-flex">
+                        <div class="step-wrapper pr-3">
+                            
+                        </div>          
+                        <div class="step-text-content">
+                    
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">西門子 MPI 通訊協議擴充卡</span>
+                            </h4>
+                            <p class="mbr-step-text mbr-fonts-style display-7" style="font-weight: bold;font-size: 20px;">
+                                此MPI擴展卡為用戶提供針對西門子PLC MPI端口進行PLC數據資料蒐集採集的功能或者進行MPI/PROFIBUS端口實現遠程訪問PLC應用，以及PLC數據採集應用<br/> <br/>
+
+                                該擴展卡是可支援任何MPI 通訊的西門子PLC，搭配Ewon 官方提供的cfg檔便可在MPI / PROFIBUS （S7）協議之間提供完整的 Gateway 功能。<br/> <br/>
+
+                                <br/>
+                      
+                                型號: FLC3701
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div style="text-align: center;"> <img src="img/bottomline.png" width="100%">    </div>
+        <div class="media-container-row" style=" margin-bottom: 2.5%;margin-top: 2.5%;">
+            <div class="media-block" style="width: 50%;text-align: center;">
+             
+                    
+                    <img src="img/flb-3601.png"  style="width: 35%;margin-top: 3%;">
+                
+            </div>
+            <div class="step-container">
+                <div class="card">
+                    <div class="step-element d-flex">
+                        <div class="step-wrapper pr-3">
+                            
+                        </div>          
+                        <div class="step-text-content">
+                    
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts"> USB Ports 遠端連線擴充卡</span>
+                            </h4>
+                            <p class="mbr-step-text mbr-fonts-style display-7" style="font-weight: bold;font-size: 20px;">
+                                此Flexy 擴展卡可替Flexy額外增加3個USB端口與PLC設備連接進行程式上下載維護設備。<br/> <br/>
+
+                                Flexy USB 卡為用戶提供了一種連接其工業設備的額外方式。現行許多小型自動化設備的串列通訊接口已經被 USB 連接埠所取代，因此可透過此擴充卡進行遠程連線訪問。
+                                3孔皆為USB2.0版本，安裝此擴充卡就可以透過USB進行PLC程式上下載來維護設備<br/> <br/>
+
+                                <br/>
+                      
+                                型號: FLC3701
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div style="text-align: center;"> <img src="img/bottomline.png" width="100%">    </div>
+        <div class="media-container-row" style=" margin-bottom: 2.5%;margin-top: 2.5%;">
+            <div class="media-block" style="width: 50%;text-align: center;">
+             
+                    
+                    <img src="img/fla-3301.png"  style="width: 35%;margin-top: 3%;">
+                
+            </div>
+            <div class="step-container">
+                <div class="card">
+                    <div class="step-element d-flex">
+                        <div class="step-wrapper pr-3">
+                            
+                        </div>          
+                        <div class="step-text-content">
+                    
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">2 序列埠 擴充卡</span>
+                            </h4>
+                            <p class="mbr-step-text mbr-fonts-style display-7" style="font-weight: bold;font-size: 20px;">
+                                此Flexy擴展卡可通過2個串行端口支援一個COM1 RS232/485/422 (透過指撥開關切換)+ 一個COM2 RS232<br/> <br/>
+
+                                用戶可自行定義輪詢串行設備的時間間隔，並使用此擴展卡來連線串列通訊設備進行數據採集。<br/> <br/> 
+                                
+                                例如經典應用:RS485 Modbus RTU 通訊數據採集;三菱 PLC 、歐姆龍 PLC 串列通訊數據採集、儀錶、變頻器數據採集。
+                                <br/>
+
+                                <br/>
+                                <br/>
+                                <br/>
+                                型號: FLA3301
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div style="text-align: center;"> <img src="img/bottomline.png" width="100%">    </div>
+        <div class="media-container-row" style=" margin-bottom: 2.5%;margin-top: 2.5%;">
+            <div class="media-block" style="width: 50%;text-align: center;">
+             
+                    
+                    <img src="img/io-ext-card-2.png"  style="width: 35%;margin-top: 3%;">
+                
+            </div>
+            <div class="step-container">
+                <div class="card">
+                    <div class="step-element d-flex">
+                        <div class="step-wrapper pr-3">
+                            
+                        </div>          
+                        <div class="step-text-content">
+                    
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">8DI-4AI-2DO 擴充卡</span>
+                            </h4>
+                            <p class="mbr-step-text mbr-fonts-style display-7" style="font-weight: bold;font-size: 20px;">
+                                Flexy I/O擴展卡為用戶提供了完整的8個數字輸入(8DI)，4個AI 16bit解析度，可通過電壓(0-10v)或電流(4-20 mA)信號種類指撥切換選擇設定配置模擬輸入以及2個數字輸出(2DO Relay NO接點)的完整端子座(2DO Relay輸出為2A)，
+                                適用於直接接入外部感測器、燈號或是控制開關，並且可搭配Flexy205軟體IO Server功能進行狀態的讀寫以及數據採集。<br/> <br/>
+
+                                
+
+                                <br/>
+                                <br/>
+                                <br/>
+                                型號: FLX3402
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div style="text-align: center;"> <img src="img/bottomline.png" width="100%">    </div>
+        <div class="media-container-row" style=" margin-bottom: 2.5%;margin-top: 2.5%;">
+            <div class="media-block" style="width: 50%;text-align: center;">
+             
+                    
+                    <img src="img/SDcard.png"  style="width: 35%;margin-top: 30%;" id="img_SDcard">
+                
+            </div>
+            <div class="step-container">
+                <div class="card">
+                    <div class="step-element d-flex">
+                        <div class="step-wrapper pr-3">
+                            
+                        </div>          
+                        <div class="step-text-content">
+                    
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">Flexy205 SD卡</span>
+                            </h4>
+                            <p class="mbr-step-text mbr-fonts-style display-7" style="font-weight: bold;font-size: 20px;">
+                                我們為用戶提供了工業級 SD 卡，容量為1 GB
+                                專為客戶提供最高級別的應用程序可靠性、持久性和數據完整性。
+                                SD 卡已經是 EXT3 格式，因此可以直接插入到 Flexy205 中，無需任何進一步的格式化要求。插入您的Flexy205設備後就可以進行數據資料儲存，在您的Flexy205的文件檔案系統（/usr 目錄）中可以擴展為存儲數據資料空間，可以做為歷史數據報表儲存使用。
+                                <br/> <br/>
+
+                                • 資料容量: 1GB<br/>
+                                • SD格式: Pre-formatted with EXT3 filesystem<br/>
+                                • 傳輸速度: SD Class 6<br/>
+                                • 規格兼容: SD Version 2.0<br/>
+                                • 高可靠工作溫度: -40°C to 85°C <br/>
+                                • 非工作溫度(儲存溫度): -55°C to 90°C<br/>
+
+                                
+
+                                <br/>
+                              
+                                型號: FAC90601_0100
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div style="text-align: center;"> <img src="img/bottomline.png" width="100%">    </div>
+        <div class="media-container-row" style=" margin-bottom: 2.5%;margin-top: 2.5%;">
+            <div class="media-block" style="width: 50%;text-align: center;">
+             
+                    
+                    <img src="img/FAC91201_0000.jpg"  style="width: 100%;margin-top: 10%;" id="img_SDcard">
+                
+            </div>
+            <div class="step-container">
+                <div class="card">
+                    <div class="step-element d-flex">
+                        <div class="step-wrapper pr-3">
+                            
+                        </div>          
+                        <div class="step-text-content">
+                    
+                            <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">Flexy205 4G 天線 (搭配4G 上網擴充卡使用)</span>
+                            </h4>
+                            <p class="mbr-step-text mbr-fonts-style display-7" style="font-weight: bold;font-size: 20px;">
+                                此天線是適用於 4G Ewon 設備的全向寬頻天線。安裝支架的設計可使用隨附的螺絲進行簡單的牆壁安裝，或使用紮帶（未提供）進行桅杆安裝。 全向輻射範圍允許將天線放置在較高的位置。
+                                <br/> <br/>
+
+                                ※適用產品: Cosy+ 4G版本,Flexy205 4G 無線上網LTE擴充卡<br/><br/>
+                        
+                                • 操作頻段: 2G / 3G / 4G / 5G<br/>
+                                • 頻率範圍: 617-960 / 1710-6000 MHz<br/>
+                                • 防水等級: IP66<br/>
+                                • 高可靠工作溫度: -40°C to 85°C <br/>
+                                • 安裝高度: 164 mm （6.46“），直徑: 48 mm （1.89”）<br/>
+                                • 纜線長度: 5mm
+
+                                <br/>
+                                <br/>
+                                
+                              
+                                型號: FAC91201_0000
+                                
+                            </p>
+
+
+                            <button class="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer; width:px; height:46px">
+                                <a  href="download/司騰達_Ewon_Flexy205_4G Bracket Antenna_DataSheet.pdf" target="_blank" style="text-decoration:none;"><div class="texts" style="position:relative;left:1px;color:#FFFFFF">型錄下載</div>  </a> 
+                            </button>
+                      
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        
+                
+
+                
+
+      
+
+                
+
+                
+
+                
+
+                
+
+             
+       
+    </div>
+</section>
 <section class="step3 " id="step3-49"  style="background-color: #E1EEF6;padding-top: 40px;padding-bottom: 40px;">
  
     <div class="container" style="padding-bottom: 40px;">
@@ -930,7 +2099,7 @@
             <img src="img/Mitsubishi.png" style="width: 250px;padding-bottom: 20px;">    
              
         <a  href="plc1.html" target="_blank" style="padding-right: 5%;padding-top: 20px;">
-            <button id="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:50px ;width: 150px;margin-bottom: 50px;">
+            <button class="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:50px ;width: 150px;margin-bottom: 50px;">
                 <div class="texts" style="color:#FFFFFF;font-size: 20px;">三菱電機</div>
             </button>
         </a>
@@ -939,7 +2108,7 @@
             <img src="img/Omron.png" style="width: 250px;padding-bottom: 20px;padding-top: 20px;">    
              
         <a  href="plc2.html" target="_blank" style="padding-right: 5%;padding-top: 20px;">
-            <button id="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:50px ;width: 150px;margin-bottom: 50px;">
+            <button class="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:50px ;width: 150px;margin-bottom: 50px;">
                 <div class="texts" style="color:#FFFFFF;font-size: 20px;">歐姆龍</div>
             </button>
         </a>
@@ -950,7 +2119,7 @@
             <img src="img/Siemens.png" style="width: 250px;padding-bottom: 20px;padding-top: 25px;">    
              
         <a  href="plc3.html" target="_blank" style="padding-right: 5%;padding-top: 20px;">
-            <button id="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:50px ;width: 150px;margin-bottom: 50px;">
+            <button class="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:50px ;width: 150px;margin-bottom: 50px;">
                 <div class="texts" style="color:#FFFFFF;font-size: 20px;">西門子</div>
             </button>
         </a>
@@ -965,7 +2134,7 @@
             <img src="img/Rockwell.png" style="width: 250px;padding-bottom: 30px;padding-top: 30px">    
              
         <a  href="plc4.html" target="_blank" style="padding-right: 5%;padding-top: 20px;">
-            <button id="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:50px ;width: 150px;margin-bottom: 50px;">
+            <button class="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:50px ;width: 150px;margin-bottom: 50px;">
                 <div class="texts" style="color:#FFFFFF;font-size: 20px;">洛克威爾</div>
             </button>
         </a>
@@ -976,7 +2145,7 @@
             <img src="img/Schneider.png" style="width: 250px;padding-bottom: 20px;padding-top: 15px">    
              
         <a  href="plc5.html" target="_blank" style="padding-right: 5%;padding-top: 20px;">
-            <button id="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:50px ;width: 150px;margin-bottom: 50px;">
+            <button class="button-back" style="letter-spacing:5px; border-radius:10px; border:1px solid transparent; outline:none; cursor:pointer ; height:50px ;width: 150px;margin-bottom: 50px;">
                 <div class="texts" style="color:#FFFFFF;font-size: 20px;">施耐德</div>
             </button>
         </a>
@@ -1191,7 +2360,7 @@
                             </h4>
                             
                             <p class="mbr-step-text mbr-fonts-style display-7">
-                                <span class="texts">借助嵌入式 OPC UA 服務器，相同的Flexy提供了簡單而安全的通信通道，可將信息從設備移動到應用程序層。 Flexy OPC UA 服務器提供了用於身份驗證和加密的安全選項，  可以在網關內部輕鬆進行管理，並符合您的 OPC UA 客戶端安全性。</span>
+                                <span class="texts">借助嵌入式 OPC UA 服務器，相同的Flexy提供了簡單而安全的通信通道，可將信息從設備移動到應用程序層。 Flexy OPC UA 服務器提供了用於身份驗證和加密的安全選項，  可以在 Gateway 內部輕鬆進行管理，並符合您的 OPC UA 客戶端安全性。</span>
                             </p>
                             
                             <p class="mbr-step-text mbr-fonts-style display-7">
@@ -1507,7 +2676,7 @@
                             <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">本地Web Server儀表板整合</span>
                             </h4>
                             <p class="mbr-step-text mbr-fonts-style display-7">
-                                 •	<span class="texts">可使用免費 Web 開發工具 ViewON 嵌入 Web 儀表板（HTML5）以顯示實時機器數據。或者是用自定義 HMTL 語法開發部屬。</span>
+                                 •	<span class="texts">可使用 Web 開發工具 ViewON 嵌入 Web 儀表板（HTML5）以顯示實時機器數據。或者是用自定義 HMTL 語法開發部屬。</span>
                                  <br/>
                                  •	<span class="texts">使用M2Web服務從智能手機或平板電腦監控這些儀表板</span>
                             </p>
@@ -1575,7 +2744,7 @@
                             <h4 class="mbr-step-title pb-3 mbr-fonts-style display-5"><span class="texts">可使用基本腳本或 Java 編程</span>
                             </h4>
                             <p class="mbr-step-text mbr-fonts-style display-7">
-                                 •	<span class="texts">使用基本腳本自定義您的網關。</span>
+                                 •	<span class="texts">使用基本腳本自定義您的 Gateway。</span>
                                  <br/>
                                  •	<span class="texts">開發Java應用程序以使用高級功能，例如添加自定義I / O驅動程序，優化應用程序或與第三方應用程序集成。</span>
                             </p>
@@ -1767,7 +2936,7 @@
             <a href="codesys.html" >CODESYS SoftPLC</a><br/>
             <a >PC BASED IPC</a><br/>
             <a href="siemens.html" >SIEMENS 系列產品</a><br/>
-	        <a href="anybuswifi.html" >Anybus Wi-Fi</a><br/>
+	        <a href="anybuswifi.html" >Anybus Wireless</a><br/>
             <a href="jmobile.html" >Jmobile HMI</a>
         </div>
         <div class="smallbox s-size" >
@@ -1777,6 +2946,7 @@
             <a href="face_sensor.html" >智慧型感測設備</a><br/>
             <a href="sensor.html" >環境品質監控</a><br/>
             <a href="camera.html" >監控與安防攝影機</a><br/>
+            <a href="download/司騰達BHP_電源供應器型錄.pdf" target="_blank" >電源供應器</a><br/>
         </div>
         <div class="smallbox s-size" >
             <div class="big"> 研發服務</div>
@@ -1800,11 +2970,19 @@
             <a >文件下載</a><br/>
             <a >軟體下載</a>
         </div>
+        <div class="smallbox s-size" style="width: 250px;text-align: center;">
+            <div class="newstext" style="padding-bottom: 5px;">司騰達 Line 官方帳戶<br></div>
+                           
+             <div  style="padding-top: 10PX;"><a  href="https://lin.ee/iDQE58W" target="_blank" ><img src="img/bhpline.png" width="50%"></a><br>ID:@bhp.tw<BR><BR>
+            <a href="https://lin.ee/iDQE58W"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png" alt="加入好友" height="36" border="0"></a>
+            </div>
+                         
+            </div>   
         <div style="border:1.3px solid #C1B9B9"></div>
         <div class="smallbox m-size ">台中客服電話 TEL：(04)-2451-0611</div>
         <div class="smallbox m-size ">台北客服電話 TEL：(02)-2242-1625</div>
         <div class="smallbox m-size ">E-mail：sales@bhp.com.tw</div>
-        <div class="smallbox m-size ">LINE：bhp.tw</div>
+        <div class="smallbox m-size ">LINE：@bhp.tw</div>
         <div class="smallbox m-size ">FB：@bhpsales</div>
         <div style="border:1.3px solid #C1B9B9"></div>
         <div class="smallbox">Copyright © 2020 BHP Industry Solution All rights reserved.</div>
